@@ -1,0 +1,82 @@
+a {
+    text-decoration: none;
+}
+
+a.nav-link {
+    color: white;
+}
+
+a.nav-link:hover {
+    color: #212529;
+}
+
+.download {
+    color: white;
+}
+
+.download:hover {
+    color: #212529;
+}
+
+.py-5 {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+
+
+.bg-light {
+    --bs-bg-opacity: 0.5;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+}
+
+.text-bg-dark {
+    --bs-bg-opacity: 0.5;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+
+}
+
+body {
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    /*background-color: var(--bs-body-bg);*/
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    background-image: url("cesar-couto-pC2xOplxsVs-unsplash.jpg");
+    background-size: cover;
+    /* top | right | bottom | left */
+    margin: 5%;
+
+}
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
