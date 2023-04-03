@@ -48,6 +48,11 @@ div {
     background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
 }
 
+.text-bg-light {
+    --bs-bg-opacity: 0.5;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+}
+
 .text-bg-dark {
     --bs-bg-opacity: 0.5;
     background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
