@@ -1,88 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
+<title>Kendra Johng Technical Writing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
 
+.w3-text-white {
+    text-shadow: rgb(53, 51, 41) 1px 0 10px;
+}
 
-<!--font awesome script-->
-<script src="https://kit.fontawesome.com/5cc42fc9ca.js" crossorigin="anonymous"></script>
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("DSC09974-Edit_001.jpg");
+  min-height: 75%;
+}
 
-    <title>Kendra Johng</title>
+.menu {
+  display: none;
+}
+</style>
 </head>
 <body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">PORTFOLIO</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">SERVICES</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large">
+    <span class="w3-tag">Kendra Johng</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:40px">Improve your business processes and maximize client deliverables.
+</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Remote from Ogden, Utah</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">KENDRA JOHNG TECHNICAL WRITING</span></h5>
+    <p>Hey, I'm Kendra, a technical writer based in Utah with <strong>over 7 years of experience</strong>.</p>
     
-<!-- Top Navigation Menu -->
-    <!-- Navigation links (hidden by default) 
-<div class="navbar">
-
-    <a href="#">Home</a>
-    <a href="#section-2">Writing</a>
-    <a href="#section-3" disabled>Art</a>
-    <a href="#section-4">About</a>
-</div>
--->
-
-<div class="row">
-
-    <div class="side">
-        <h1 id="#">Kendra Johng <i class="fa-solid fa-pencil fa-2xs" style="color: #f2bd56;"></i> Technical Writer</h1>
-        <br>
-        <img src="profile-picture.png">
+        <ul>
+            <li>I have worked with a variety of industries such as information technology, pharmaceutical, medical devices, insurance, safety, real estate, food production, digital marketing, etc.
+            </li>
+            <li>My expertise is in Software Development Life Cycle (SDLC) documentation, project managment, process improvement, client-facing deliverables, 
+                standard operating procedures, and end-user instructions.</li>
+            <li>I am a certified Department of Homeland Security (DHS) Trusted Tester, which allows me to test 
+                and certify software applications for 508 compliance using the Web Content Accessibility Guidelines (WCAG). </li>
+        </ul>
         
-        <p>Hey, I'm Kendra.  I'm a tech writer based in Utah with seven years of experience.  
-            I work remotely as a contractor to the EPA, where I lead the documentation effort for various projects. My expertise is in Software Development Life Cycle (SDLC) documentation, client-facing deliverables, and end-user instructions / procedures.
-            I draw for fun.  
-                I like skateboarding and jiu-jitsu.  Donuts and cinnamon rolls are my weakness.
-                If you're interested in art commissions
-                or my freelance writing, please email me using the link below.  I look forward to working with you :)
-        </p>
         
-        <br>
-        <a target="_blank" class="fcc-btn" href="https://www.linkedin.com/in/kendra-johng/">Connect on LinkedIn</a> 
-         &#160 <a target="_blank" class="fcc-btn" href="mailto: beusfreelance@gmail.com">Email Me</a>
-        <br>
+        
+</p>
 
-      </div>
+<div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="pic4.jpg" class="w3-round w3-image" alt="Photo of Kendra Johng" width="500" height="333">
+    </div>
 
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-padding-large">
+      <p>Outside of work I love to draw, skateboard, and practice Brazilian Jiu-Jitsu. Donuts and cinnamon rolls are my weakness.</p>
+      <p><button class="w3-button w3-black" type="submit"><a target="_blank" href="https://www.linkedin.com/in/kendra-johng/"> CONNECT ON LINKEDIN</a></button></p>
 
-      <div class="main wrapper">
+    </div>
+  </div>
 
-        <div class="grid-container">
-          <div class="item1">
-            <h2>Technical Writing Portfolio</h2>
-            <p>My portfolio includes a variety of samples including: Standard Operating Procedures (SOPs), policies, project managment documentation, user guides, release notes, process flowcharts, etc.  All proprietary client information is redacted and replaced with generic language and placeholder images.
-              </p>
-              <a class="fcc-btn" href="portfolio.html">View Portfolio</a>  
-
-          </div>
-          <div class="item2">
-            <h2>Art Portfolio</h2>
-              <p>My digital art gallery mainly includes drawings from both the Brazilian Jiu-Jitsu world and the world of skateboarding.
-                I sell stickers and art prints on Etsy. My Instagram and Etsy handle are both <strong>@teddygramsoupart</strong>.
-              </p>
-              <a target="_blank" class="fcc-btn" href="https://www.instagram.com/teddygramsoupart/">Instagram</a>  
-              &#160 <a target="_blank" class="fcc-btn" href="https://www.etsy.com/shop/TeddygramsoupArt">Etsy</a>  
-
-          </div>
-
-        </div>
-      
-      </div>
-
+  </div>
 </div>
 
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PORTFOLIO</span></h5>
+    <p>Much of my current work is proprietary, and I am unable to share those documents.  However, there are a few public documents that I have contributed to during my time as a contractor to the EPA. I also have a few of writing samples from my freelance gigs.</p>
+    <br>
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">EPA Project Artifacts</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Freelance Writing</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5><a target="_blank" href="https://usepa.servicenowservices.com/sdwisprogram?id=kb_search&kb_knowledge_base=4251afe41b9705547b16ea04bc4bcbd2&spa=1&kb_category=571cfdf51baea1508e946311f54bcbd2"> Release Notes</a></h5>
+      <p class="w3-text-grey">The purpose of these release notes are to inform the drinking water user community of the DW-SFTIES development updates on a bi-monthly cadence. Each set of release notes contains the following sections: 1. What is included in the release, 2. New Features, 3. Enhancements, 4. Fixes, 5. Known Issues, 6. User Acceptance Testing Summary, 7. Goals for future releases, and 8. References.</p><br>
+    
+      <h5><a target="_blank" href="https://usepa.servicenowservices.com/sdwisprogram?id=kb_article_view&sysparm_article=KB0015384">Concept of Operations</a></h5>
+      <p class="w3-text-grey">This Concept of Operations (CONOPS) is both an analysis and a formal document that describes how the Drinking Water State-Tribal-Federal Information Exchange System (DW-SFTIES) and associated components (applications, web services, etc.) will operate to achieve business, functional, and technical requirements.</p><br>
+    
+      <h5><a target="_blank" href="https://usepa.servicenowservices.com/sdwisprogram?id=kb_article_view&sysparm_article=KB0015927"> Data Model Analysis Summary Report</a></h5>
+      <p class="w3-text-grey">The purpose of this document is to summarize the analysis and decisions made during the evaluation phase for the Drinking Water State-Federal-Tribal Information Exchange System (DW-SFTIES) data model.</p><br>
+    
+      <h5><a target="_blank" href="https://usepa.servicenowservices.com/sdwisprogram?id=kb_article_view&sysparm_article=KB0015368"> Ground Water Rule (GWR) Data Entry Instructions (DEIs)</a></h5>
+      <p class="w3-text-grey">The Ground Water Rule (GWR) Data Entry Instructions (DEIs) document provides the most common GWR violations in the form of example scenarios. This DEI also provides guidance about data fields that need to be reported for each violation scenario.</p><br>
+    
+      <h5><a target="_blank" href="https://www.epa.gov/general-assistance-program-gap/gap-guidance-financial-assistance-agreements"> 2022 General Assistance Program (GAP) Guidance</a></h5>
+      <p class="w3-text-grey">This Guidance provides information to Tribes and intertribal consortia on how to develop, apply for, and manage Indian Environmental General Assistance Program (GAP) financial assistance agreements, generally referred to as GAP grants. It also describes how the U.S. Environmental Protection Agency (EPA) administers GAP grants to ensure national consistency in EPA’s actions when negotiating, reviewing, and administering GAP awards.</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5><a target="_blank" href="Small Business Beauty Company_Kendra Johng Technical Writing Portfolio_032523.pdf">Marketing and Product Management SOP</a></h5>
+      <p class="w3-text-grey">Small Business | Beauty Company</p><br>
+
+      <h5>Autosource Document Reformatting</h5>
+      <p class="w3-text-grey">This client requested a review of all documents, editing, reformatting, and the addition of their new company logos.
+      <a target="_blank" href="Autosource ACH Form_Draft_060723-combined.pdf"><strong>View After</strong></a>  
+      &#160 
+      <a target="_blank" href="BEFORE_Autosource Document Reformatting and Editing.pdf"><strong>View Before</strong></a>  
+    </p><br>
+
+      <h5><a target="_blank" href="Retail Store Opening Procedure_Kendra Johng Technical Writing Portfolio_041023.pdf">Retail Store Opening Procedure</a></h5>
+      <p class="w3-text-grey">I wrote this document as an exercise for my portfolio; this was not for a client. I did some research on the retail industry and job descriptions for retail store managers to help me write this SOP.</p><br>
+
+      <h5><a target="_blank" href="Maintenance Program Policy_Kendra Johng Technical Writing Portfolio_032523 - Copy.pdf">Maintenance Program Policy</a></h5>
+      <p class="w3-text-grey">The client (redacted) requested that I draft a Maintenance Program Policy. The company did not have one in place, and they needed it to comply with ISO 9001 Standards.</p><br>
+
+      <h5><a target="_blank" href="Associates of Pathology_Project Proposal.pdf">Gap Analysis Project Proposal</a></h5>
+      <p class="w3-text-grey">Client | Associates of Pathology</p>
+
+    </div>  
+
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">DOCUMENTATION SERVICES</span></h5>
+    <p>I am open to freelance writing projects on the weekends, outside the hours of my full-time position. The main platform I use to promote my technical writing services is Fiverr.</p>
+<br>
+    <p><span class="w3-tag">1. Software Documentation</span> I will create and/or edit your software documentation as needed. Documents include: release notes, user guides, installation/configuration instructions, API documentation, etc. </p>
+
+    <p><span class="w3-tag">2. Standard Operating Procedures</span> I will write and/or revise SOPs for your business. Each SOP will be tailored to your specific business processes, and I will have multiple customization options for your document(s).</p>
+
+
+    <p><span class="w3-tag">3. Document Management</span> I will assess your current business process for document management, offer solutions for improvement, and then implement those solutions. A few systems that I've worked with for document management are Google Drive, SharePoint, Microsoft Teams, Confluence, and Notion.</p>
+
+    <p><span class="w3-tag">4. Proposal Writing</span> I will help you create and/or edit business proposals to present to potential clients.</p>
+    <br>
+
+    <p><button class="w3-button w3-black" type="submit"><a target="_blank" href="mailto: kendrajohng@gmail.com"> EMAIL ME</a></button></p>
+    <p><strong>Email me</strong> to schedule a free, 15-minute discovery call.</p>
+
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
 
 <!-- Footer -->
-<div class="footer">
-        © Beus Freelance Writing and Design LLC 2023
-        <br>        <br>
-        <span class="badge">Last Updated July 31, 2023</span>
-</div>
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Let's improve your business processes and maximize client deliverables together!</p>
+  <span style="font-size:14px">© Beus Freelance Writing and Design LLC 2023 | Last Updated: November 2023</span>
+</footer>
 
-
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
 
 </body>
 </html>
