@@ -1,248 +1,205 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Kendra Johng Technical Writing</title>
+<title>Kendra Johng</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-body, html {
-  height: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.w3-text-white {
-    text-shadow: rgb(53, 51, 41) 1px 0 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
 .bgimg {
+  background-image: url('homepagepic2.jpg');
+  min-height: 100%;
   background-position: center;
   background-size: cover;
-  background-image: url("DSC09974-Edit_001.jpg");
-  min-height: 50%;
-}
-
-.menu {
-  display: none;
-}
-
-h5 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-button {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style: italic;
-}
-
-button, a {
-  text-decoration: none;
-}
-
-.tablink {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style: italic;
 }
 </style>
 </head>
 <body>
 
-<!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-padding w3-black" style="font-size:12px">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-black">HOME</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#menu" class="w3-button w3-block w3-black">PORTFOLIO</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#where" class="w3-button w3-block w3-black">SERVICES</a>
-    </div>
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <p>kendra johng</p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-medium">
+    <p><button onclick="document.getElementById('about').style.display='block'" class="w3-button w3-black">who are you?</button></p>
+    <p><button onclick="document.getElementById('experience').style.display='block'" class="w3-button w3-black">what's your experience?</button></p>
+    <p><button onclick="document.getElementById('portfolio').style.display='block'" class="w3-button w3-black">let me see your work.</button></p>
+    <p><button onclick="document.getElementById('services').style.display='block'" class="w3-button w3-black">i want to work with you!</button></p>
+
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">senior technical writer</p>
+    <p class="w3-large">remote from ogden, utah</p>
+    <p>photograph by togi photo</p>
   </div>
 </div>
 
-<!-- Header with image -->
-<header class="bgimg w3-display-container" id="home">
-  <div class="w3-display-bottomleft w3-center w3-padding-large">
-    <span class="w3-tag">Kendra Johng</span>
-  </div>
-  <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:25px">Improve your business processes. Maximize your business potential.
-</span>
-  </div>
-  <div class="w3-display-bottomright w3-center w3-padding-large">
-    <span class="w3-text-white">Remote from Ogden, Utah</span>
-  </div>
-</header>
+<!-- About Modal -->
+<div id="about" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('about').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <p>I'm Kendra Johng, a Senior Technical Writer and Editor based in Ogden, Utah with more than 8 years of experience. It's nice to meet you.</p>
+      <p>My work spans a wide variety of industries, including information technology, pharmaceuticals, medical devices, insurance, health and safety, manufacturing, food production, digital marketing, and beyond.</p>
+      <p>I am an expert in Software Development Life Cycle (SDLC) documentation, project management, process improvement, as well as maintaing critical policies and procedures in compliance with the Capability Maturity Model Integration (CMMI) standards, installation guides, and end-user instructions. I work directly with clients, developers, product managers, and Subject Matter Experts (SMEs) to create functional and aesthetic documentation.
+      <p>As a certified Department of Homeland Security (DHS) Trusted Tester, I am qualified to test and certify software applications for Section 508 compliance using the Web Content Accessibility Guidelines (WCAG). Throughout my career I have also obtained a Six Sigma Green Belt certification, and the Associate Safety Professional certification (2020-2023). I am currently in the process of obtaining the Certified Scrum Master certification.</p>
+      <button><a style="text-decoration:none" href="https://www.linkedin.com/in/kendra-johng/">Let's connect on LinkedIn</a></button>
 
-<!-- Add a background color and large text to the whole page -->
-<div class="w3-large">
-
-<!-- About Container -->
-<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">KENDRA JOHNG TECHNICAL WRITING</span></h5>
-    <p>I'm Kendra, a Senior Technical Writer and Editor with <strong>more than 8 years of experience</strong>. It's nice to meet you.</p>
-    
-        <ul>
-            <li>My work spans a wide variety of industries, including information technology,
-              pharmaceuticals, medical devices, insurance, health and safety, real estate, food production,
-              digital marketing, and beyond.</li>
-            <li>I am an expert in Software Development Life Cycle (SDLC) documentation, project
-              management, process improvement , as well as standard operating
-              procedures (SOPs), installation guides, and end-user instructions. 
-              I work directly with developers, product managers, and subject matter experts to create functional and aesthetic documentation.</li>
-            <li>As a certified Department of Homeland Security (DHS) Trusted Tester, I am
-              qualified to test and certify software applications for Section 508 compliance using the Web
-              Content Accessibility Guidelines (WCAG).</li>
-        </ul>
-        
-        
-        
-</p>
-
-<div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <img src="pic4.jpg" class="w3-round w3-image" alt="Photo of Kendra Johng" width="500" height="333">
+      <p>Outside of work, I love to draw, skateboard, and practice Brazilian Jiu-Jitsu. Donuts and cinnamon rolls are my weaknesses. I own a small art business by the name of Teddygramsoup. My collections can be found and purchased on <a href="https://www.etsy.com/shop/TeddygramsoupArt"><b>Etsy</b></a>, <a href="https://www.instagram.com/teddygramsoupart/"><b>Instagram</b></a>, or at a local Utah market event.</p>
     </div>
 
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-padding-large">
-      <p>Outside of work, I love to draw, skateboard, and practice Brazilian Jiu-Jitsu.
-        Donuts and cinnamon rolls are my weaknesses.</p>
-      <p><button class="w3-button w3-black" type="submit"><a target="_blank" href="https://www.linkedin.com/in/kendra-johng/"> CONNECT ON LINKEDIN</a></button></p>
-
-    </div>
-  </div>
-
-  </div>
+</div>
 </div>
 
-<!-- Menu Container -->
-<div class="w3-container" id="menu">
-  <div class="w3-content" style="max-width:700px">
- 
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PORTFOLIO</span></h5>
-    <p>While much of my current work is proprietary, I’m able to share myriad public-facing documents from my contract with the United States Environmental Protection Agency
-      
-      (EPA). Below is a selection of these texts along with several writing samples from other
-      freelance contracts.</p>
-    <br>
-    <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="w3-col s6 tablink">EPA Project Artifacts</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s6 tablink">Freelance Writing Samples</div>
-      </a>
+
+<!-- Portfolio Modal -->
+<div id="portfolio" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('portfolio').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>EPA-Published Documents</h1>
     </div>
-
-    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-      <h5><a target="_blank" href="https://usepa.servicenowservices.com/sdwisprogram?id=kb_search&kb_knowledge_base=4251afe41b9705547b16ea04bc4bcbd2&spa=1&kb_category=571cfdf51baea1508e946311f54bcbd2"> Release Notes</a></h5>
-      <p class="w3-text-grey">The purpose of these release notes are to inform the drinking water user community of the DW-SFTIES development updates on a bi-monthly cadence. Each set of release notes contains the following sections: 1. What is included in the release, 2. New Features, 3. Enhancements, 4. Fixes, 5. Known Issues, 6. User Acceptance Testing Summary, 7. Goals for future releases, and 8. References.</p><br>
-    
-      <h5><a target="_blank" href="https://usepa.servicenowservices.com/sdwisprogram?id=kb_article_view&sysparm_article=KB0015384">Concept of Operations</a></h5>
-      <p class="w3-text-grey">This Concept of Operations (CONOPS) is both an analysis and a formal document that describes how the Drinking Water State-Tribal-Federal Information Exchange System (DW-SFTIES) and associated components (applications, web services, etc.) will operate to achieve business, functional, and technical requirements.</p><br>
-    
-      <h5><a target="_blank" href="https://usepa.servicenowservices.com/sdwisprogram?id=kb_article_view&sysparm_article=KB0015927"> Data Model Analysis Summary Report</a></h5>
-      <p class="w3-text-grey">The purpose of this document is to summarize the analysis and decisions made during the evaluation phase for the Drinking Water State-Federal-Tribal Information Exchange System (DW-SFTIES) data model.</p><br>
-    
-      <h5><a target="_blank" href="https://usepa.servicenowservices.com/sdwisprogram?id=kb_article_view&sysparm_article=KB0015368"> Ground Water Rule (GWR) Data Entry Instructions (DEIs)</a></h5>
-      <p class="w3-text-grey">The Ground Water Rule (GWR) Data Entry Instructions (DEIs) document provides the most common GWR violations in the form of example scenarios. This DEI also provides guidance about data fields that need to be reported for each violation scenario.</p><br>
-    
-      <h5><a target="_blank" href="https://www.epa.gov/general-assistance-program-gap/gap-guidance-financial-assistance-agreements"> 2022 General Assistance Program (GAP) Guidance</a></h5>
-      <p class="w3-text-grey">This Guidance provides information to Tribes and intertribal consortia on how to develop, apply for, and manage Indian Environmental General Assistance Program (GAP) financial assistance agreements, generally referred to as GAP grants. It also describes how the U.S. Environmental Protection Agency (EPA) administers GAP grants to ensure national consistency in EPA’s actions when negotiating, reviewing, and administering GAP awards.</p>
+    <div class="w3-container">
+        <p>While much of my current work is proprietary, I’m able to share some public-facing documents from my contract with the United States Environmental Protection Agency (EPA). Below is a selection of these texts.</p>
+        <h5><b>Pre-Production Release Notes  | <a href="https://usepa.servicenowservices.com/sdwisprogram?id=kb_search&kb_knowledge_base=4251afe41b9705547b16ea04bc4bcbd2&spa=1&kb_category=571cfdf51baea1508e946311f54bcbd2">Read Here</b></a></h5>
+    <p>The purpose of these release notes are to inform the drinking water user community of the Drinking Water State-Tribal-Federal Information Exchange System (DW-SFTIES) development updates on a bi-monthly cadence. Each set of release notes contains the following sections: 1. What is included in the release, 2. New Features, 3. Enhancements, 4. Fixes, 5. Known Issues, 6. User Acceptance Testing Summary, 7. Goals for future releases, and 8. References.</p>
+        <h5><b>Concept of Operations (CONOPS)  | <a href="https://usepa.servicenowservices.com/sdwisprogram?id=kb_article_view&sysparm_article=KB0015384">Read Here</b></a></h5>
+      <p>This Concept of Operations (CONOPS) is both an analysis and a formal document that describes how the DW-SFTIES and associated components (applications, web services, etc.) will operate to achieve business, functional, and technical requirements.</p>
+        <h5><b>Data Model Analysis Summary Report  | <a href="https://usepa.servicenowservices.com/sdwisprogram?id=kb_article_view&sysparm_article=KB0015927">Read Here</b></a></h5>
+      <p>The purpose of this document is to summarize the analysis and decisions made during the evaluation phase for the Drinking Water State-Federal-Tribal Information Exchange System (DW-SFTIES) data model.</p>
+        <h5><b>Ground Water Rule (GWR) Data Entry Instructions (DEIs)  | <a href="https://usepa.servicenowservices.com/sdwisprogram?id=kb_article_view&sysparm_article=KB0015368">Read Here</b></a></h5>
+      <p>The Ground Water Rule (GWR) Data Entry Instructions (DEIs) document provides the most common GWR violations in the form of example scenarios. This DEI also provides guidance about data fields that need to be reported for each violation scenario.</p>
+      <h5><b>2022 General Assistance Program (GAP) Guidance  | <a href="https://www.epa.gov/general-assistance-program-gap/gap-guidance-financial-assistance-agreements">Read Here</b></a></h5>
+    <p>This Guidance provides information to Tribes and intertribal consortia on how to develop, apply for, and manage Indian Environmental General Assistance Program (GAP) financial assistance agreements, generally referred to as GAP grants. It also describes how the U.S. Environmental Protection Agency (EPA) administers GAP grants to ensure national consistency in EPA’s actions when negotiating, reviewing, and administering GAP awards.</p>
     </div>
-
-    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-      <h5><a target="_blank" href="Small Business Beauty Company_Kendra Johng Technical Writing Portfolio_032523.pdf">Marketing and Product Management SOP</a></h5>
-      <p class="w3-text-grey">Small Business | Beauty Company</p><br>
-
-      <h5>Autosource Document Reformatting</h5>
-      <p class="w3-text-grey">This client requested a review of all documents, editing, reformatting, and the addition of their new company logos.
-      <a target="_blank" href="BEFORE_Autosource Document Reformatting and Editing.pdf"><strong>View Before</strong></a>  
+    <div class="w3-container w3-black">
+      <h1>Freelance Writing Samples</h1>
+    </div>
+    <div class="w3-container">
+      <h5><b>Nuwave Laser Cleaning   | View User Manuals</b></h5>
+        <p>I provided documentation support for <a href="https://nuwavelaser.com/"><b>Nuwave Laser Cleaning</b></a> by transforming their initial user manauls. I collaborated with the Subject Matter Experts (SMEs) to validate the manuals' content and operation procedures throughout the document. The first manual is for their Continuous Wave Laser Cleaning Machine, and the second manual is for the Pulse Laser Cleaning Machine.</p>
+      <h5><b>A'lei Beauty Marketing and Product Management   | <a target="_blank" href="Small Business Beauty Company_Kendra Johng Technical Writing Portfolio_032523.pdf">View SOP</a></b></h5>
+      <P><a href="https://www.aleibeauty.com/?srsltid=AfmBOoodVNKYXiB0ADaD6v0QnkQQcG3Anizq1X3xtTwd1xz1Ey2BbA_c"><b>A'lei Beauty</b></a> requested an SOP that covers marketing, quality control, and production and inventory processes for her beauty business.</P>
+      <h5><b>Autosource Document Reformatting  | <a target="_blank" href="BEFORE_Autosource Document Reformatting and Editing.pdf">View Before</a>  
         &#160 
-      <a target="_blank" href="Autosource ACH Form_Draft_060723-combined.pdf"><strong>View After</strong></a>  
-
-    </p><br>
-
-      <h5><a target="_blank" href="Retail Store Opening Procedure_Kendra Johng Technical Writing Portfolio_041023.pdf">Retail Store Opening Procedure</a></h5>
-      <p class="w3-text-grey">I wrote this document as an exercise for my portfolio; this was not for a client. I did some research on the retail industry and job descriptions for retail store managers to help me write this SOP.</p><br>
-
-      <h5><a target="_blank" href="Maintenance Program Policy_Kendra Johng Technical Writing Portfolio_032523 - Copy.pdf">Maintenance Program Policy</a></h5>
-      <p class="w3-text-grey">The client (redacted) requested that I draft a Maintenance Program Policy. The company did not have one in place, and they needed it to comply with ISO 9001 Standards.</p><br>
-
-      <h5><a target="_blank" href="Associates of Pathology_Project Proposal.pdf">Gap Analysis Project Proposal</a></h5>
-      <p class="w3-text-grey">Client | Associates of Pathology</p>
-
-    </div>  
-
+      <a target="_blank" href="Autosource ACH Form_Draft_060723-combined.pdf">View After</a></b></h5>
+        <p><a href="https://autosourcehawaii.com/"><b>Autosource</b></a> requested a review of all documents, editing, reformatting, and the addition of their new company logos.</p>
+      <h5><b>Retail Store Opening Procedure   | <a target="_blank" href="Retail Store Opening Procedure_Kendra Johng Technical Writing Portfolio_041023.pdf">View Procedure</a></b></h5>
+      <p>I wrote this document as an exercise for my portfolio; this was not for a client. I did some research on the retail industry and job descriptions for retail store managers to help me write this SOP.</p>
+  </div>
+    <div class="w3-container w3-black">
+      <h1>Github Contributions</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Luca Ledger   | <a href="https://github.com/jwaspin/luca-ledger/blob/main/UserGuide.pdf"><b>View User Guide 1.0</b></a></h5>
+      <p>I found an open project on Github and volunteered to write a user manual for <a href="https://github.com/jwaspin">jwaspin</a> (Jonathan).</p>
+    </div>
   </div>
 </div>
 
-<!-- Contact/Area Container -->
-<div class="w3-container" id="where" style="padding-bottom:32px;">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">DOCUMENTATION SERVICES</span></h5>
-    <p>I am available for 10-20 freelance hours per week. Though I typically promote my
-      technical writing services on Fiverr, I am open for direct queries.</p>
-<br>
-    <p><span class="w3-tag">1. Software Documentation</span> Whether you need a brand-new document or a
-      revamp of existing text, I can take your software documentation to the next level of
-      professionalism, accessibility, and flow. From release notes to user guides, installation and
-      configuration instructions to API documentation and more, I can take it on.</p>
+<!-- Experience Modal -->
+<div id="experience" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('experience').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>My Technical Writing Experience</h1>
+    </div>
+    <div class="w3-container">
 
-    <p><span class="w3-tag">2. Standard Operating Procedures</span> Every SOP I create is tailored to my clients’
-      specific business processes and needs. With this customized document in hand, your employees
-      will be equipped to carry out any procedure.</p>
+        <h5><b>Senior Technical Writer and Owner | Beus Freelance LLC | March 2020 to Present</b></h5>
+        <ul>
+            <li>Established a part-time freelance writing business in 2020 to offer documentation services to small businesses. Provided support to over 50 clients via Fiverr, and continuing to provide support to new clients as requested.</li>
+            <li>Contractor to Vector Resrouces Inc., a company that provides services to the United States Department of Energy (DOE), providing writing, editing, and 508 compliance support for Word, Excel, PowerPoint, and PDF files.</li>
+        </ul>  
+        
+        <hr>
 
+        <h5><b>Senior Technical Writer | Systalex Corporation | January 2024 to Present</b></h5>
+        <ul>
+            <li>Manager of the Systalex Documentation Team</li>
+            <li>Core Team member and author of policies and procedures for the company's CMMI appraisal efforts</li>
+            <li>Lead writer, editor, and document manager of multiple project deliverables for EPA clients</li>
+            <li>Developing and maintaining documentation status trackers, project risk trackers, internal document review workflows, and issue trackers, with various project management tools, such as Microsoft Project Planner, Microsoft Lists, Jira, and Confluence</li>
+            <li>Interviewing Subject Matter Experts (SMEs), Architects, Data Analysts, Developers, etc. to develop internal and external documentation for applications</li>
+            <li>Faciliating live document reviews and providing weekly status updates with the clients</li>
+            <li>Performing data analysis for retrospecitve and re-baselining efforts</li>
+        </ul>
 
-    <p><span class="w3-tag">3. Document Management</span> By assessing your current process for document
-      management, I will curate and implement solutions for improvement using Google Drive,
-      SharePoint, Microsoft Teams, Confluence, and/or Notion.</p>
+        <h5><b>Lead Technical Writer | Systalex Corporation | October 2021 to January 2024</b></h5>
+        <ul>
+          <li>Collaborating with development teams to create process flowcharts, write Standard Operating Procedures (SOPs), manage client deliverables, analyze and mitigate project risks, and track project performance metrics</li>
+          <li>Writing both detailed and simplified technical documentation such as user guides, installation guides, release notes, data entry instructions, test cases, etc. for application development</li>
+          <li>Establishing an efficient document management system, various document templates, review and approval workflows, a risk management process, and a change management process</li>
+          <li>Researching methods for improving internal/external processes</li>
+        </ul>
 
-    <p><span class="w3-tag">4. Proposal Writing</span> Together, we can form expert proposals that will attract
-      new clients to your business.</p>
-    <br>
+        <h5><b>Technical Writer | Western Growers | October 2019 to October 2021</b></h5>
+        <ul>
+          <li>Wrote SOPs, and designed document templates, presentations, and facilitator guides for training</li>
+          <li>Facilitated working meetings with claims and customer service department managers, supervisors and SMEs</li>
+          <li>Improved internal processes by establishing a document review and approval process via SharePoint Workflow</li>
+        </ul>
 
-    <p><button class="w3-button w3-black" type="submit"><a target="_blank" href="mailto:kendrajohng@gmail.com"> EMAIL ME</a></button></p>
-    <p><strong>Email me</strong> to schedule a free, 15-minute discovery call.</p>
+        <h5><b>Environmental Health and Safety Specialist Consultant | BSI EHS Services and Solutions | May 2018 to October 2019</b></h5>
+        <ul>
+          <li>Conducted safety trainings and inspections, participated in incident investigations, and managed incident reporting systems</li>
+          <li>Recorded findings and prepared recommendations for revising safety procedures in accordance with local/state/federal regulations (OSHA, CalOSHA, etc.)</li>
+          <li>Documented SOPs, safety forms, and EHS policies such as EAPs, IIPPs, CHPs, etc.</li>
+          <li>Managed chemical inventory databases and new chemical/equipment approval requests</li>
+        </ul>
 
+        <h5><b>Environmental Health and Safety Specialist | Gilead Sciences | July 2017 to My 2018</b></h5>
+        <ul>
+          <li>Lead the development of Job Safety Analyses for all departments, wrote new Lock-out/Tag-out procedures for the maintenance department, and edited SOPs for the EHS department</li>
+          <li>Developed training materials for the environmental management system software</li>
+        </ul>
+
+        <h5><b>Technical Writer | Gilead Sciences | January 2017 to July 2017</b></h5>
+        <ul>
+          <li>Created SOPs and revised manufacturing documentation, forms, bill of materials, and batch material records in alignment with Gilead’s Quality System</li>
+          <li>Analyzed data and presented monthly metrics for manufacturing documentation status</li>
+        </ul>
+
+        <hr>
+        
+        <h5><b>Bachelor of Science Public Health | University of Arizona | August 2012 to August 2016</b></h5>
+    </div>
   </div>
 </div>
 
-<!-- End page content -->
+<!-- Services Modal -->
+<div id="services" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-black w3-display-container">
+        <span onclick="document.getElementById('services').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+        <h1>Documentation Services Available</h1>
+        
+      </div>
+      <div class="w3-container">
+        <p>I am available for 10-20 freelance hours per week outside of my 9-to-5. Though I typically promote my technical writing services on Fiverr, I am open for direct queries. Send me an email using the button link below.</p>
+        <button><a target="_blank" style="text-decoration:none" href="mailto:kendrajohng@gmail.com">Let's work together</a></button>
+        <hr>
+          <h5><b>1. Software Documentation</b></h5>
+            <p>Whether you need a brand-new document or a revamp of existing text, I can take your software documentation to the next level of professionalism, accessibility, and flow. From release notes to user guides, installation and configuration instructions to API documentation and more, I can take it on.</p>
+            <h5><b>2. Standard Operating Procedures (SOPs) or User Manuals</b></h5>
+            <p>Every SOP I create is tailored to my clients’ specific business processes and needs. With this customized document in hand, your employees will be equipped to carry out any procedure.</p>
+            <h5><b>3. Project Management and Document Management</b></h5>
+            <p>By assessing your current process for document management, I will curate and implement solutions for improvement using Google Drive, SharePoint, Microsoft Teams, Confluence, and/or Notion.</p>
+            <h5><b>4. 508 Compliance Support</b></h5>
+            <p>Together, we can ensure your documents are accessible for all users.</p>
+            <hr>
+            <p>Don't just take my word for it. Read what my clients have to say.</p>
+            <button><a style="text-decoration:none" href="https://www.fiverr.com/kdadisman?public_mode=true">Client Reviews on Fiverr</a></button>
+            <p></p>
+
+        </div>
+</div>
 </div>
 
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>What are you waiting for? Let’s maximize.</p>
-  <span style="font-size:14px">© Beus Freelance Writing and Design LLC 2023 | Last Updated: February 2024</span>
-</footer>
-
-<script>
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-}
-document.getElementById("myLink").click();
-</script>
 
 </body>
 </html>
+
