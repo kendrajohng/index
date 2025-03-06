@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teddygramsoup | Digital Artist & Illustrator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before {
+        content: "\f3c2";
+      }
+      .gallery-grid {
+        column-count: 3;
+        column-gap: 1.5rem;
+      }
+      .gallery-item {
+        break-inside: avoid;
+        margin-bottom: 1.5rem;
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FF69B4",
+              secondary: "#FFB6C1",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white">
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+      <nav
+        class="container mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <a href="#" class="text-3xl font-['Pacifico'] text-primary"
+          >Teddygramsoup</a
+        >
+        <div class="flex items-center space-x-8">
+          <a
+            href="#home"
+            class="text-gray-700 hover:text-primary transition-colors"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="text-gray-700 hover:text-primary transition-colors"
+            >About</a
+          >
+          <a
+            href="#gallery"
+            class="text-gray-700 hover:text-primary transition-colors"
+            >Gallery</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        id="home"
+        class="relative h-[85vh] flex items-center"
+        style="
+          background-image: url('https://public.readdy.ai/ai/img_res/ac80a2b944c7aebee96f4568ac58eab6.jpg');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-white/90 to-white/30"
+        ></div>
+        <div class="container mx-auto px-6 relative">
+          <div class="max-w-2xl">
+            <h1 class="text-5xl font-bold mb-4 text-gray-800">
+              Digital Art & Upcyled Clothing
+            </h1>
+            <p class="text-xl mb-6 text-gray-600">
+              Welcome to my secret art page. Here you'll find a collection of my
+              digital art and upcyling projects.
+            </p>
+            <a
+              href="#gallery"
+              class="bg-primary text-white px-8 py-3 rounded-button inline-flex items-center space-x-2 hover:bg-opacity-90 transition-colors cursor-pointer"
+            >
+              <span>Explore Gallery</span>
+              <i class="ri-arrow-right-line"></i>
+            </a>
+            <a
+              href="https://www.etsy.com/shop/TeddygramsoupArt"
+              class="bg-primary text-white px-8 py-3 rounded-button inline-flex items-center space-x-2 hover:bg-opacity-90 transition-colors cursor-pointer"
+            >
+              <span>Etsy Shop</span>
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <div class="flex flex-col md:flex-row items-start gap-12">
+            <div class="md:w-1/2">
+              <img
+                src="profilephoto.JPG"
+                class="rounded-lg shadow-lg w-full"
+                alt="Artist Portrait"
+              />
+              <div class="mt-8">
+                <h2 class="text-3xl font-bold mb-6 text-gray-800">
+                  About the Artist
+                </h2>
+                <p class="text-gray-600 mb-6">
+                  Hello! I'm Kendra Johng, known online as Teddygramsoup, a
+                  digital artist and upcyler based in Utah. I make my own
+                  cinnamon rolls and Clippy is my spirit animal.
+                </p>
+              </div>
+            </div>
+            <div class="md:w-1/2">
+              <h2 class="text-3xl font-bold mb-8 text-gray-800">
+                Featured Etsy Product
+              </h2>
+              <div class="space-y-8">
+                <div
+                  class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-[1.02]"
+                >
+                  <img
+                    src="commission.webp"
+                    class="w-full h-64 object-cover"
+                    alt="Dreamy Character"
+                  />
+                  <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">
+                      Custom Skateboard Art Commission
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                      I’m so excited to cartoon-ize your skateboarding photo!
+                    </p>
+                    <a
+                      href="https://www.etsy.com/listing/1221844919/custom-skateboard-art-commission?ref=shop_home_active_19&frs=1&logging_key=bd64ebcca1b49c62649c8094c2039c7dcafbefb6%3A1221844919"
+                      class="bg-primary text-white px-8 py-3 rounded-button inline-flex items-center space-x-2 hover:bg-opacity-90 transition-colors cursor-pointer"
+                    >
+                      <span>Etsy Shop</span>
+                      <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+            Gallery
+          </h2>
+          <div class="flex justify-center mb-8 space-x-4">
+            <button
+              class="px-6 py-2 rounded-full bg-primary text-white hover:bg-opacity-90 transition-colors cursor-pointer gallery-filter active"
+              data-category="all"
+            >
+              All
+            </button>
+            <button
+              class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors cursor-pointer gallery-filter"
+              data-category="digital"
+            >
+              Digital Art
+            </button>
+            <button
+              class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors cursor-pointer gallery-filter"
+              data-category="illustration"
+            >
+              Illustrations
+            </button>
+            <button
+              class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors cursor-pointer gallery-filter"
+              data-category="sketch"
+            >
+              Sketches
+            </button>
+          </div>
+          <div class="gallery-grid">
+            <div class="gallery-item" data-category="digital">
+              <img
+                src="weber.jpg"
+                class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                alt="Digital Art 1"
+              />
+            </div>
+            <div class="gallery-item" data-category="illustration">
+              <img
+                src="rack.jpg"
+                class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                alt="Illustration 1"
+              />
+            </div>
+            <div class="gallery-item" data-category="sketch">
+              <img
+                src="weber2.JPG"
+                class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                alt="Sketch 1"
+              />
+            </div>
+            <div class="gallery-item" data-category="digital">
+              <img
+                src="golden.JPG"
+                class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                alt="Digital Art 2"
+              />
+            </div>
+            <div class="gallery-item" data-category="illustration">
+              <img
+                src="redutah.JPG"
+                class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                alt="Illustration 2"
+              />
+            </div>
+            <div class="gallery-item" data-category="sketch">
+              <img
+                src="texasam.jpg"
+                class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                alt="Sketch 2"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div>
+            <h3 class="font-['Pacifico'] text-2xl mb-4">Teddygramsoup</h3>
+            <p class="text-gray-400">
+              Creating digital art and upcycled clothing.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#gallery"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+          <p class="text-gray-400">
+            &copy; 2025 Teddygramsoup. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div id="image-modal" class="modal">
+      <div class="fixed inset-0 flex items-center justify-center p-4">
+        <div class="relative">
+          <img
+            id="modal-image"
+            src=""
+            alt=""
+            class="max-w-full max-h-[90vh] rounded-lg"
+          />
+          <button
+            id="close-modal"
+            class="absolute top-4 right-4 text-white bg-black/50 rounded-full p-2 hover:bg-black/70 transition-colors cursor-pointer"
+          >
+            <i class="ri-close-line ri-2x"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("image-modal");
+        const modalImg = document.getElementById("modal-image");
+        const closeModal = document.getElementById("close-modal");
+        const galleryImages = document.querySelectorAll(".gallery-item img");
+        const contactForm = document.getElementById("contact-form");
+        const galleryFilters = document.querySelectorAll(".gallery-filter");
+        const galleryItems = document.querySelectorAll(".gallery-item");
+        galleryImages.forEach((img) => {
+          img.addEventListener("click", function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+          });
+        });
+        closeModal.addEventListener("click", function () {
+          modal.style.display = "none";
+        });
+        window.addEventListener("click", function (e) {
+          if (e.target === modal) {
+            modal.style.display = "none";
+          }
+        });
+        galleryFilters.forEach((filter) => {
+          filter.addEventListener("click", function () {
+            const category = this.dataset.category;
+            galleryFilters.forEach((f) =>
+              f.classList.remove("bg-primary", "text-white")
+            );
+            this.classList.add("bg-primary", "text-white");
+            galleryItems.forEach((item) => {
+              if (category === "all" || item.dataset.category === category) {
+                item.style.display = "block";
+              } else {
+                item.style.display = "none";
+              }
+            });
+          });
+        });
+        contactForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const formData = new FormData(this);
+          const data = Object.fromEntries(formData);
+          const successMessage = document.createElement("div");
+          successMessage.className =
+            "fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg";
+          successMessage.textContent = "Message sent successfully!";
+          document.body.appendChild(successMessage);
+          setTimeout(() => {
+            successMessage.remove();
+          }, 3000);
+          this.reset();
+        });
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
