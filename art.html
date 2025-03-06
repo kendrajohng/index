@@ -68,24 +68,39 @@
       <nav
         class="container mx-auto px-6 py-4 flex items-center justify-between"
       >
-        <a href="#" class="text-3xl font-['Pacifico'] text-primary"
-          >Teddygramsoup</a
+        <a href="#" class="text-2xl md:text-3xl font-['Pacifico'] text-primary"
+          >teddygramsoup</a
         >
-        <div class="flex items-center space-x-8">
+        <button
+          id="mobile-menu-button"
+          class="md:hidden w-10 h-10 flex items-center justify-center"
+        >
+          <i class="ri-menu-line ri-2x text-gray-700"></i>
+        </button>
+        <div
+          id="nav-menu"
+          class="hidden md:flex fixed md:static inset-0 md:inset-auto bg-white/95 md:bg-transparent flex-col md:flex-row items-center justify-center md:justify-start space-y-8 md:space-y-0 md:space-x-8"
+        >
+          <button
+            id="close-menu"
+            class="md:hidden w-10 h-10 absolute top-4 right-4 flex items-center justify-center"
+          >
+            <i class="ri-close-line ri-2x text-gray-700"></i>
+          </button>
           <a
             href="#home"
             class="text-gray-700 hover:text-primary transition-colors"
-            >Home</a
+            >home</a
           >
           <a
             href="#about"
             class="text-gray-700 hover:text-primary transition-colors"
-            >About</a
+            >about</a
           >
           <a
-            href="#gallery"
+            href="#stuff"
             class="text-gray-700 hover:text-primary transition-colors"
-            >Gallery</a
+            >stuff</a
           >
         </div>
       </nav>
@@ -93,7 +108,7 @@
     <main>
       <section
         id="home"
-        class="relative h-[85vh] flex items-center"
+        class="relative min-h-[85vh] flex items-center py-20 md:py-0"
         style="
           background-image: url('https://public.readdy.ai/ai/img_res/ac80a2b944c7aebee96f4568ac58eab6.jpg');
           background-size: cover;
@@ -103,27 +118,27 @@
         <div
           class="absolute inset-0 bg-gradient-to-r from-white/90 to-white/30"
         ></div>
-        <div class="container mx-auto px-6 relative">
+        <div class="container mx-auto px-4 md:px-6 relative">
           <div class="max-w-2xl">
-            <h1 class="text-5xl font-bold mb-4 text-gray-800">
-              Digital Art & Upcyled Clothing
+            <h1 class="text-3xl md:text-5xl font-bold mb-4 text-gray-800">
+              digital art & upcycled clothing
             </h1>
-            <p class="text-xl mb-6 text-gray-600">
-              Welcome to my secret art page. Here you'll find a collection of my
-              digital art and upcyling projects.
+            <p class="text-lg md:text-xl mb-6 text-gray-600">
+              welcome to my secret art page. here you'll find a collection of my
+              digital art and upcycling projects.
             </p>
             <a
               href="#gallery"
               class="bg-primary text-white px-8 py-3 rounded-button inline-flex items-center space-x-2 hover:bg-opacity-90 transition-colors cursor-pointer"
             >
-              <span>Explore Gallery</span>
+              <span>explore stuff</span>
               <i class="ri-arrow-right-line"></i>
             </a>
             <a
               href="https://www.etsy.com/shop/TeddygramsoupArt"
               class="bg-primary text-white px-8 py-3 rounded-button inline-flex items-center space-x-2 hover:bg-opacity-90 transition-colors cursor-pointer"
             >
-              <span>Etsy Shop</span>
+              <span>etsy shop</span>
               <i class="ri-arrow-right-line"></i>
             </a>
           </div>
@@ -131,27 +146,27 @@
       </section>
       <section id="about" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
-          <div class="flex flex-col md:flex-row items-start gap-12">
-            <div class="md:w-1/2">
+          <div class="flex flex-col md:flex-row items-start gap-8 md:gap-12">
+            <div class="w-full md:w-1/2">
               <img
-                src="profilephoto.JPG"
+                src="photo.png"
                 class="rounded-lg shadow-lg w-full"
                 alt="Artist Portrait"
               />
               <div class="mt-8">
                 <h2 class="text-3xl font-bold mb-6 text-gray-800">
-                  About the Artist
+                  about the artist
                 </h2>
                 <p class="text-gray-600 mb-6">
-                  Hello! I'm Kendra Johng, known online as Teddygramsoup, a
-                  digital artist and upcyler based in Utah. I make my own
-                  cinnamon rolls and Clippy is my spirit animal.
+                  hello! i'm kendra johng, known online as teddygramsoup, a
+                  digital artist and upcycler based in utah. i make my own
+                  cinnamon rolls and clippy is my spirit animal.
                 </p>
               </div>
             </div>
             <div class="md:w-1/2">
               <h2 class="text-3xl font-bold mb-8 text-gray-800">
-                Featured Etsy Product
+                featured etsy product
               </h2>
               <div class="space-y-8">
                 <div
@@ -163,21 +178,18 @@
                     alt="Dreamy Character"
                   />
                   <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">
-                      Custom Skateboard Art Commission
-                    </h3>
+                    <h3 class="text-xl font-bold mb-2">custom skateboard art commission</h3>
                     <p class="text-gray-600 mb-4">
-                      I’m so excited to cartoon-ize your skateboarding photo!
+                        i’m so excited to cartoon-ize your skateboarding photo!
                     </p>
                     <a
-                      href="https://www.etsy.com/listing/1221844919/custom-skateboard-art-commission?ref=shop_home_active_19&frs=1&logging_key=bd64ebcca1b49c62649c8094c2039c7dcafbefb6%3A1221844919"
-                      class="bg-primary text-white px-8 py-3 rounded-button inline-flex items-center space-x-2 hover:bg-opacity-90 transition-colors cursor-pointer"
-                    >
-                      <span>Etsy Shop</span>
-                      <i class="ri-arrow-right-line"></i>
-                    </a>
+                    href="https://www.etsy.com/listing/1221844919/custom-skateboard-art-commission?ref=shop_home_active_19&frs=1&logging_key=bd64ebcca1b49c62649c8094c2039c7dcafbefb6%3A1221844919"
+                    class="bg-primary text-white px-8 py-3 rounded-button inline-flex items-center space-x-2 hover:bg-opacity-90 transition-colors cursor-pointer"
+                  >
+                    <span>etsy shop</span>
+                    <i class="ri-arrow-right-line"></i>
+                  </a>
                   </div>
-                </div>
               </div>
             </div>
           </div>
@@ -186,75 +198,82 @@
       <section id="gallery" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
           <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
-            Gallery
+            stuff
           </h2>
-          <div class="flex justify-center mb-8 space-x-4">
+          <div class="flex flex-wrap justify-center gap-4 mb-8 px-4">
             <button
               class="px-6 py-2 rounded-full bg-primary text-white hover:bg-opacity-90 transition-colors cursor-pointer gallery-filter active"
               data-category="all"
             >
-              All
+              all
             </button>
             <button
               class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors cursor-pointer gallery-filter"
               data-category="digital"
             >
-              Digital Art
+              digital art
             </button>
             <button
               class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors cursor-pointer gallery-filter"
-              data-category="illustration"
+              data-category="upcycles"
             >
-              Illustrations
+              upcycles
             </button>
             <button
               class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors cursor-pointer gallery-filter"
-              data-category="sketch"
+              data-category="stickers"
             >
-              Sketches
+              stickers
             </button>
           </div>
           <div class="gallery-grid">
             <div class="gallery-item" data-category="digital">
               <img
-                src="weber.jpg"
+                src="air.jpg"
                 class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
                 alt="Digital Art 1"
               />
             </div>
-            <div class="gallery-item" data-category="illustration">
+            <div class="gallery-item" data-category="upcycles">
               <img
-                src="rack.jpg"
+                src="cowboys.jpg"
                 class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
-                alt="Illustration 1"
+                alt="upcycle 1"
               />
             </div>
-            <div class="gallery-item" data-category="sketch">
+            <div class="gallery-item" data-category="stickers">
               <img
-                src="weber2.JPG"
+                src="snacks.webp"
                 class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
-                alt="Sketch 1"
+                alt="sticker 1"
               />
             </div>
             <div class="gallery-item" data-category="digital">
               <img
-                src="golden.JPG"
+                src="climb.jpg"
                 class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
                 alt="Digital Art 2"
               />
             </div>
-            <div class="gallery-item" data-category="illustration">
+            <div class="gallery-item" data-category="upcycles">
               <img
-                src="redutah.JPG"
+                src="niners.jpg"
                 class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
-                alt="Illustration 2"
+                alt="upcycle 2"
               />
             </div>
-            <div class="gallery-item" data-category="sketch">
+            <div class="gallery-item" data-category="digital">
+                <img
+                  src="bjj.jpg"
+                  class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                  alt="Digital Art 3"
+                />
+              </div>
+            <div class="gallery-item" data-category="stickers">
               <img
-                src="texasam.jpg"
+                src="bison.webp"
                 class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
-                alt="Sketch 2"
+                alt="sticker 2"
               />
             </div>
           </div>
@@ -263,11 +282,12 @@
     </main>
     <footer class="bg-gray-900 text-white py-12">
       <div class="container mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           <div>
-            <h3 class="font-['Pacifico'] text-2xl mb-4">Teddygramsoup</h3>
+            <h3 class="font-['Pacifico'] text-2xl mb-4">teddygramsoup</h3>
             <p class="text-gray-400">
-              Creating digital art and upcycled clothing.
+              Creating digital magic and bringing imagination to life through
+              art.
             </p>
           </div>
           <div>
@@ -277,24 +297,40 @@
                 <a
                   href="#home"
                   class="text-gray-400 hover:text-white transition-colors"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#gallery"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Gallery</a
+                  >home</a
                 >
               </li>
               <li>
                 <a
                   href="#about"
                   class="text-gray-400 hover:text-white transition-colors"
-                  >About</a
+                  >about</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#stuff"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >stuff</a
                 >
               </li>
             </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+            <form class="flex flex-col sm:flex-row gap-2 sm:gap-0">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="w-full sm:w-auto flex-1 px-4 py-2 rounded-button sm:rounded-r-none focus:outline-none text-gray-900"
+              />
+              <button
+                type="submit"
+                class="w-full sm:w-auto bg-primary px-6 py-2 rounded-button sm:rounded-l-none hover:bg-opacity-90 transition-colors cursor-pointer"
+              >
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
         <div class="border-t border-gray-800 mt-12 pt-8 text-center">
@@ -324,6 +360,23 @@
     </div>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const closeMenuButton = document.getElementById("close-menu");
+        const navMenu = document.getElementById("nav-menu");
+        mobileMenuButton.addEventListener("click", () => {
+          navMenu.classList.remove("hidden");
+          document.body.style.overflow = "hidden";
+        });
+        closeMenuButton.addEventListener("click", () => {
+          navMenu.classList.add("hidden");
+          document.body.style.overflow = "";
+        });
+        navMenu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            navMenu.classList.add("hidden");
+            document.body.style.overflow = "";
+          });
+        });
         const modal = document.getElementById("image-modal");
         const modalImg = document.getElementById("modal-image");
         const closeModal = document.getElementById("close-modal");
