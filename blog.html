@@ -363,6 +363,50 @@
         </section>
         <div class="w-full">
           <div class="grid md:grid-cols-2 gap-8">
+
+            <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+              <div class="p-6">
+                <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                  <span class="flex items-center gap-1">
+                    <i class="ri-calendar-line"></i>
+                    March 13, 2025
+                  </span>
+                  <span class="flex items-center gap-1">
+                    <i class="ri-user-line"></i>
+                    Kendra Johng
+                  </span>
+                </div>
+                <h2 class="text-2xl font-bold mb-3 text-gray-900">
+                  The Power of Collaboration and Mentorship in the Workplace
+                </h2>
+                <p class="text-gray-600 mb-4 blog-content">
+                  I was laid off for the first time in my career. It was a
+                  shock, and I felt incredibly lost. I didn’t hear from anybody
+                  on my team for an entire week. I realized that although I was
+                  no longer able to work with my colleagues of 3.5 years, that
+                  shouldn’t stop me from reaching out.
+                </p>
+                <div class="flex items-center justify-between">
+                  <div class="flex gap-2">
+                    <span
+                      class="px-3 py-1 bg-fuchsia-100 text-fuchsia-600 rounded-full text-sm"
+                      >Miscellaneous</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm"
+                      >Tips</span
+                    >
+                  </div>
+                  <a
+                    href="#article-1"
+                    onclick="showArticle(1)"
+                    class="text-primary hover:text-blue-700 font-medium !rounded-button"
+                    >Read More →</a
+                  >
+                </div>
+              </div>
+            </article>
+            
             <article class="bg-white rounded-lg shadow-sm overflow-hidden">
               <div class="p-6">
                 <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
@@ -397,8 +441,8 @@
                     >
                   </div>
                   <a
-                    href="#article-1"
-                    onclick="showArticle(1)"
+                    href="#article-2"
+                    onclick="showArticle(2)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -438,8 +482,8 @@
                     >
                   </div>
                   <a
-                    href="#article-2"
-                    onclick="showArticle(2)"
+                    href="#article-3"
+                    onclick="showArticle(3)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -478,8 +522,8 @@
                     >
                   </div>
                   <a
-                    href="#article-3"
-                    onclick="showArticle(3)"
+                    href="#article-4"
+                    onclick="showArticle(4)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -525,8 +569,8 @@
                     >
                   </div>
                   <a
-                    href="#article-4"
-                    onclick="showArticle(4)"
+                    href="#article-5"
+                    onclick="showArticle(5)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -566,8 +610,8 @@
                     >
                   </div>
                   <a
-                    href="#article-5"
-                    onclick="showArticle(5)"
+                    href="#article-6"
+                    onclick="showArticle(6)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -606,8 +650,8 @@
                     >
                   </div>
                   <a
-                    href="#article-6"
-                    onclick="showArticle(6)"
+                    href="#article-7"
+                    onclick="showArticle(7)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -718,7 +762,69 @@
         }
       });
       const articles = {
-        1: {
+                1: {
+          title: "The Power of Collaboration and Mentorship in the Workplace",
+          author: "Kendra Johng",
+          date: "March 13, 2025",
+          content: `
+          <p class="mb-4">I was laid off for the first time in my career. It was a shock, and I felt incredibly lost. I didn’t hear from anybody on my team for an entire week. I realized that although I was no longer able to work with my colleagues of 3.5 years, that shouldn’t stop me from reaching out. I started sending texts and messages on LinkedIn to request recommendations and references as I start to search for my next role.
+<p class="mb-4">My colleagues started to respond and I became hopeful again. I felt heard and supported. It reminded me of the importance and power of collaboration and mentorship in the workplace. We all have different paths, but while we are working together it’s important to make the most of that working relationship. I’m grateful to have learned so much from everyone on my team. It has helped me as a technical writer and as a leader. I’ve had so many great examples to learn from, and I’m excited for the leaders I will learn from at my next job.
+</p>
+<p class="mb-4">In today’s fast-paced and competitive business world, success is rarely achieved in isolation. Whether you're an entry-level employee or a seasoned professional, collaboration and mentorship play a vital role in professional growth, innovation, and overall workplace satisfaction. Companies that foster a culture of teamwork and guidance often see increased productivity, stronger employee engagement, and a more dynamic organizational environment.
+</p>
+<h3 class="text-xl font-bold mt-6 mb-3">Why Collaboration Matters</h3>
+<p class="mb-4">Encourages Innovation – When diverse minds come together, they bring fresh perspectives and creative solutions that may not have been possible in isolation.
+</p>
+<p class="mb-4">Enhances Productivity – Teams that communicate and collaborate effectively can streamline processes, reduce redundancies, and complete projects more efficiently.
+
+</p>
+<p class="mb-4">Builds Stronger Relationships – Working together fosters trust, respect, and camaraderie, leading to a more supportive and engaging work environment.
+
+</p>
+<p class="mb-4">Develops Critical Thinking Skills – Exposure to different viewpoints challenges employees to think critically and make more informed decisions.
+
+</p>
+<h3 class="text-xl font-bold mt-6 mb-3">The Role of Mentorship in Professional Growth
+</h3>
+<p class="mb-4">Accelerates Learning and Growth – Mentees gain valuable knowledge and experience faster than they would on their own.
+
+</p>
+<p class="mb-4">Boosts Confidence and Career Development – Having a mentor can give employees the confidence to take on new challenges, seek promotions, and develop leadership skills.
+
+</p>
+<p class="mb-4">Enhances Employee Retention – Employees who feel supported and guided are more likely to stay with their organization, reducing turnover rates.
+
+</p>
+<p class="mb-4">Strengthens Organizational Culture – Mentorship fosters a sense of belonging and reinforces company values, creating a positive workplace atmosphere.
+
+</p>
+<h3 class="text-xl font-bold mt-6 mb-3">Creating a Collaborative and Mentorship-Oriented Workplace
+</h3>
+<p class="mb-4">Organizations can encourage collaboration and mentorship through intentional efforts, such as:
+</p>
+<p class="mb-4">Establishing Cross-Departmental Projects – Encouraging employees from different teams to work together on initiatives promotes idea-sharing and learning.
+
+</p>
+<p class="mb-4">Implementing Mentorship Programs – Pairing junior employees with seasoned professionals can accelerate career growth and knowledge transfer.
+
+</p>
+<p class="mb-4">Encouraging Open Communication – Fostering an environment where employees feel comfortable sharing ideas and feedback leads to stronger teamwork.
+
+</p>
+<p class="mb-4">Recognizing and Rewarding Collaboration – Celebrating team successes and mentorship efforts reinforces their importance.
+
+</p>
+<h3 class="text-xl font-bold mt-6 mb-3">Conclusion
+</h3>
+<p class="mb-4">Collaboration and mentorship are not just buzzwords—they are essential elements of a thriving workplace. I’m finding out that it’s just as important for the workplace as it is for transitioning to the next role. My colleagues helped me grow in my previous role, and they are still helping me as I search for the next thing. That is true collaboration and mentorship; it is not limited by the company you’re currently working for. These are the people that will help you and want to see you grow beyond the company they met you at. 
+</p>
+<p class="mb-4">By encouraging teamwork and fostering meaningful professional relationships, organizations can cultivate an environment where employees feel empowered, engaged, and equipped for success. Whether you’re leading a team or just starting your career, embracing collaboration and mentorship can open doors to new opportunities and drive long-term growth.
+ 
+</p>
+
+`,
+        },
+        2: {
           title: "Why Standard Operating Procedures (SOPs) Matter",
           author: "Kendra Johng",
           date: "March 12, 2025",
@@ -739,7 +845,7 @@
 
 `,
         },
-        2: {
+        3: {
           title: "Essential Components of Standard Operating Procedures (SOPs)",
           author: "Kendra Johng",
           date: "March 12, 2025",
@@ -761,7 +867,7 @@
 </h3>
 `,
         },
-        3: {
+        4: {
           title: "Who Writes Standard Operating Procedures (SOPs)?",
           author: "Kendra Johng",
           date: "March 12, 2025",
@@ -782,7 +888,7 @@
 </h3>
 `,
         },
-        4: {
+        5: {
           title:
             "Policies vs. Standard Operating Procedures (SOPs) vs. User Manuals: Understanding the Differences",
           author: "Kendra Johng",
@@ -799,7 +905,7 @@
 <h3 class="text-xl font-bold mt-6 mb-3">Together, these documents create a structured approach to efficiency, compliance, and productivity in any organization.</h3>
 `,
         },
-        5: {
+        6: {
           title: "Best Practices for Writing Effective User Manuals",
           author: "Kendra Johng",
           date: "March 12, 2025",
@@ -826,7 +932,7 @@
 
 `,
         },
-        6: {
+        7: {
           title: "Best Practices for Writing Clear and Effective Policies",
           author: "Kendra Johng",
           date: "March 12, 2025",
