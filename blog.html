@@ -289,7 +289,7 @@
             as a technical writer. New posts whenever I have time to write!
           </p>
           <p class="text-lg text-primary font-medium mb-8">
-            7 Articles Published
+            8 Articles Published
           </p>
 
           <div class="flex flex-wrap justify-center gap-3">
@@ -363,7 +363,44 @@
         </section>
         <div class="w-full">
           <div class="grid md:grid-cols-2 gap-8">
-
+          <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+              <div class="p-6">
+                <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                  <span class="flex items-center gap-1">
+                    <i class="ri-calendar-line"></i>
+                    March 14, 2025
+                  </span>
+                  <span class="flex items-center gap-1">
+                    <i class="ri-user-line"></i>
+                    Kendra Johng
+                  </span>
+                </div>
+                <h2 class="text-2xl font-bold mb-3 text-gray-900">
+                  Why Every Document Needs a Revision History
+                </h2>
+                <p class="text-gray-600 mb-4 blog-content">
+                  Imagine working on an important document—maybe a policy, user manual, or standard operating procedure—and suddenly realizing that something critical has changed. Who made the update? When was it changed? What was the previous version? Without a revision history section, answering these questions can be frustrating.
+                </p>
+                <div class="flex items-center justify-between">
+                  <div class="flex gap-2">
+                    <span
+                      class="px-3 py-1 bg-fuchsia-100 text-fuchsia-600 rounded-full text-sm"
+                      >Miscellaneous</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm"
+                      >Tips</span
+                    >
+                  </div>
+                  <a
+                    href="#article-1"
+                    onclick="showArticle(1)"
+                    class="text-primary hover:text-blue-700 font-medium !rounded-button"
+                    >Read More →</a
+                  >
+                </div>
+              </div>
+            </article>
             <article class="bg-white rounded-lg shadow-sm overflow-hidden">
               <div class="p-6">
                 <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
@@ -398,8 +435,8 @@
                     >
                   </div>
                   <a
-                    href="#article-1"
-                    onclick="showArticle(1)"
+                    href="#article-2"
+                    onclick="showArticle(2)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -441,8 +478,8 @@
                     >
                   </div>
                   <a
-                    href="#article-2"
-                    onclick="showArticle(2)"
+                    href="#article-3"
+                    onclick="showArticle(3)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -482,8 +519,8 @@
                     >
                   </div>
                   <a
-                    href="#article-3"
-                    onclick="showArticle(3)"
+                    href="#article-4"
+                    onclick="showArticle(4)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -522,8 +559,8 @@
                     >
                   </div>
                   <a
-                    href="#article-4"
-                    onclick="showArticle(4)"
+                    href="#article-5"
+                    onclick="showArticle(5)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -569,8 +606,8 @@
                     >
                   </div>
                   <a
-                    href="#article-5"
-                    onclick="showArticle(5)"
+                    href="#article-6"
+                    onclick="showArticle(6)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -610,8 +647,8 @@
                     >
                   </div>
                   <a
-                    href="#article-6"
-                    onclick="showArticle(6)"
+                    href="#article-7"
+                    onclick="showArticle(7)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -650,8 +687,8 @@
                     >
                   </div>
                   <a
-                    href="#article-7"
-                    onclick="showArticle(7)"
+                    href="#article-8"
+                    onclick="showArticle(8)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -762,7 +799,38 @@
         }
       });
       const articles = {
-                1: {
+                        1: {
+          title: "Why Every Document Needs a Revision History",
+          author: "Kendra Johng",
+          date: "March 14, 2025",
+          content: `
+          <p class="mb-4">Imagine working on an important document—maybe a policy, user manual, or standard operating procedure—and suddenly realizing that something critical has changed. Who made the update? When was it changed? What was the previous version? Without a revision history section, answering these questions can be frustrating.
+<p class="mb-4">A revision history gives the reader or user a clear record of all edits made to a document over time. Here are 5 reasons why a revision history is essential:
+
+</p>
+<h3 class="text-xl font-bold mt-6 mb-3">Accountability & Transparency</h3>
+<p class="mb-4">Knowing who made changes and when ensures clarity and prevents unauthorized edits.
+</p>
+<h3 class="text-xl font-bold mt-6 mb-3">Version Control</h3>
+<p class="mb-4">Teams can track all iterations of a document, avoid outdated information, and restore previous versions if needed.
+</p>
+<h3 class="text-xl font-bold mt-6 mb-3">Compliance & Audits</h3>
+<p class="mb-4">Many industries require documentation of changes to comply with regulatory standards.
+</p>
+<h3 class="text-xl font-bold mt-6 mb-3">Collaboration</h3>
+<p class="mb-4">Multiple contributors can work on a document without confusion, reducing errors and miscommunication.
+</p>
+<h3 class="text-xl font-bold mt-6 mb-3">Better Decision-Making</h3>
+<p class="mb-4">Understanding why a change was made (and by whom) helps teams make informed updates in the future.
+</p>
+<p class="mb-4">Including a simple table at the beginning or end of your document listing dates, descriptions of changes, and author names can save time, reduce errors, and create a reliable document history. A well-maintained revision history is a small but mighty tool that enhances efficiency and accuracy in any organization.
+</p>
+<p class="mb-4">NOTE: If your team uses digital documentation tools like Google Docs, Confluence, or version control software, leverage their built-in revision tracking features for even better control.
+
+</p>
+`,
+        },
+                2: {
           title: "The Power of Collaboration and Mentorship in the Workplace",
           author: "Kendra Johng",
           date: "March 13, 2025",
@@ -824,7 +892,7 @@
 
 `,
         },
-        2: {
+        3: {
           title: "Why Standard Operating Procedures (SOPs) Matter",
           author: "Kendra Johng",
           date: "March 12, 2025",
@@ -845,7 +913,7 @@
 
 `,
         },
-        3: {
+        4: {
           title: "Essential Components of Standard Operating Procedures (SOPs)",
           author: "Kendra Johng",
           date: "March 12, 2025",
@@ -867,7 +935,7 @@
 </h3>
 `,
         },
-        4: {
+        5: {
           title: "Who Writes Standard Operating Procedures (SOPs)?",
           author: "Kendra Johng",
           date: "March 12, 2025",
@@ -888,7 +956,7 @@
 </h3>
 `,
         },
-        5: {
+        6: {
           title:
             "Policies vs. Standard Operating Procedures (SOPs) vs. User Manuals: Understanding the Differences",
           author: "Kendra Johng",
@@ -905,7 +973,7 @@
 <h3 class="text-xl font-bold mt-6 mb-3">Together, these documents create a structured approach to efficiency, compliance, and productivity in any organization.</h3>
 `,
         },
-        6: {
+        7: {
           title: "Best Practices for Writing Effective User Manuals",
           author: "Kendra Johng",
           date: "March 12, 2025",
@@ -932,7 +1000,7 @@
 
 `,
         },
-        7: {
+        8: {
           title: "Best Practices for Writing Clear and Effective Policies",
           author: "Kendra Johng",
           date: "March 12, 2025",
