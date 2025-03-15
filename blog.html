@@ -22,6 +22,7 @@
       .blog-content {
         overflow: hidden;
         display: -webkit-box;
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
       }
       #article-modal {
@@ -289,7 +290,7 @@
             as a technical writer. New posts whenever I have time to write!
           </p>
           <p class="text-lg text-primary font-medium mb-8">
-            8 Articles Published
+            9 Articles Published
           </p>
 
           <div class="flex flex-wrap justify-center gap-3">
@@ -363,6 +364,48 @@
         </section>
         <div class="w-full">
           <div class="grid md:grid-cols-2 gap-8">
+            <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+              <div class="p-6">
+                <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                  <span class="flex items-center gap-1">
+                    <i class="ri-calendar-line"></i>
+                    March 15, 2025
+                  </span>
+                  <span class="flex items-center gap-1">
+                    <i class="ri-user-line"></i>
+                    Kendra Johng
+                  </span>
+                </div>
+                <h2 class="text-2xl font-bold mb-3 text-gray-900">
+                  508 Compliance: Making Documents Accessible to Everyone
+                </h2>
+                <p class="text-gray-600 mb-4 blog-content">
+                  Have you ever struggled to read a document because of poor formatting or lack of clarity? Now, imagine how challenging it would be for someone with a disability. That’s where 508 compliance comes in—it ensures that digital content is accessible to everyone, including individuals with disabilities.
+                </p>
+                <div class="flex items-center justify-between">
+                  <div class="flex gap-2">
+                                        <span
+                      class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                      >Writing</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-fuchsia-100 text-fuchsia-600 rounded-full text-sm"
+                      >Miscellaneous</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm"
+                      >Tips</span
+                    >
+                  </div>
+                  <a
+                    href="#article-1"
+                    onclick="showArticle(1)"
+                    class="text-primary hover:text-blue-700 font-medium !rounded-button"
+                    >Read More →</a
+                  >
+                </div>
+              </div>
+            </article>
           <article class="bg-white rounded-lg shadow-sm overflow-hidden">
               <div class="p-6">
                 <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
@@ -383,6 +426,10 @@
                 </p>
                 <div class="flex items-center justify-between">
                   <div class="flex gap-2">
+                                        <span
+                      class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                      >Writing</span
+                    >
                     <span
                       class="px-3 py-1 bg-fuchsia-100 text-fuchsia-600 rounded-full text-sm"
                       >Miscellaneous</span
@@ -393,8 +440,8 @@
                     >
                   </div>
                   <a
-                    href="#article-1"
-                    onclick="showArticle(1)"
+                    href="#article-2"
+                    onclick="showArticle(2)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -435,8 +482,8 @@
                     >
                   </div>
                   <a
-                    href="#article-2"
-                    onclick="showArticle(2)"
+                    href="#article-3"
+                    onclick="showArticle(3)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -478,8 +525,8 @@
                     >
                   </div>
                   <a
-                    href="#article-3"
-                    onclick="showArticle(3)"
+                    href="#article-4"
+                    onclick="showArticle(4)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -519,8 +566,8 @@
                     >
                   </div>
                   <a
-                    href="#article-4"
-                    onclick="showArticle(4)"
+                    href="#article-5"
+                    onclick="showArticle(5)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -559,8 +606,8 @@
                     >
                   </div>
                   <a
-                    href="#article-5"
-                    onclick="showArticle(5)"
+                    href="#article-6"
+                    onclick="showArticle(6)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -606,8 +653,8 @@
                     >
                   </div>
                   <a
-                    href="#article-6"
-                    onclick="showArticle(6)"
+                    href="#article-7"
+                    onclick="showArticle(7)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -647,8 +694,8 @@
                     >
                   </div>
                   <a
-                    href="#article-7"
-                    onclick="showArticle(7)"
+                    href="#article-8"
+                    onclick="showArticle(8)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -687,8 +734,8 @@
                     >
                   </div>
                   <a
-                    href="#article-8"
-                    onclick="showArticle(8)"
+                    href="#article-9"
+                    onclick="showArticle(9)"
                     class="text-primary hover:text-blue-700 font-medium !rounded-button"
                     >Read More →</a
                   >
@@ -799,7 +846,41 @@
         }
       });
       const articles = {
-                        1: {
+         1: {
+          title: "508 Compliance: Making Documents Accessible to Everyone",
+          author: "Kendra Johng",
+          date: "March 15, 2025",
+          content: `
+          <p class="mb-4">Have you ever struggled to read a document because of poor formatting or lack of clarity? Now, imagine how challenging it would be for someone with a disability. That’s where 508 compliance comes in—it ensures that digital content is accessible to everyone, including individuals with disabilities.
+
+<p class="mb-4">I didn’t know anything about 508 compliance 3.5 years ago. When I started my job as a contractor to the U.S. Environmental Protection Agency (EPA) I was asked to ensure a document was 508-compliant because it was going to be published on a public website for users. https://www.section508.gov/ has a ton of free resources that helped me learn how to make documents 508-compliant. I’ll write a separate post about Web Content Accessibility Guidelines (WCAG) for testing web applications for 508 compliance.
+</p>
+<h3 class="text-xl font-bold mt-6 mb-3">What Is 508 Compliance?</h3>
+<p class="mb-4">Section 508 is a part of the Rehabilitation Act of 1973, requiring federal agencies (and any organizations working with them) to make electronic and information technology accessible to people with disabilities. This includes documents, websites, software, and multimedia.
+</p>
+<h3 class="text-xl font-bold mt-6 mb-3">Why Accessible Documents Matter</h3>
+<p class="mb-4">Creating 508-compliant documents isn’t just about legal requirements—it’s about inclusivity and usability. Here’s why accessibility is crucial:
+</p>
+<p class="mb-4">Equal Access – Everyone, regardless of ability, should be able to read, understand, and navigate documents.</p>
+<p class="mb-4">Legal & Ethical Responsibility – Non-compliance can lead to penalties, lawsuits, and reputational damage.</p>
+<p class="mb-4">Better User Experience – Features like clear headings, readable fonts, and alt text for images improve usability for all readers.</p>
+<p class="mb-4">Expanded Reach – Accessible documents ensure that people using screen readers, voice commands, or other assistive technologies can engage with your content.</p>
+<h3 class="text-xl font-bold mt-6 mb-3">How to Make Documents 508-Compliant</h3>
+<p class="mb-4">
+<ul>
+<li>Use structured headings and proper formatting for easy navigation.</li>
+<li>Provide alt text for images so screen readers can describe them.</li>
+<li>Ensure color contrast is sufficient for readability.</li>
+<li>Use accessible PDFs with selectable text, not scanned images.</li>
+<li>Add closed captions and transcripts for multimedia content.</li>
+</ul>
+</p>
+<h3 class="text-xl font-bold mt-6 mb-3">By making your documents 508-compliant, you’re not just following a rule—you’re ensuring that everyone, regardless of ability, can access and benefit from your content. Accessibility is not an afterthought; it’s a necessity.
+</h3>
+
+`,
+        },
+                        2: {
           title: "Why Every Document Needs a Revision History",
           author: "Kendra Johng",
           date: "March 14, 2025",
@@ -830,7 +911,7 @@
 </p>
 `,
         },
-                2: {
+                3: {
           title: "The Power of Collaboration and Mentorship in the Workplace",
           author: "Kendra Johng",
           date: "March 13, 2025",
@@ -892,7 +973,7 @@
 
 `,
         },
-        3: {
+        4: {
           title: "Why Standard Operating Procedures (SOPs) Matter",
           author: "Kendra Johng",
           date: "March 12, 2025",
@@ -913,7 +994,7 @@
 
 `,
         },
-        4: {
+        5: {
           title: "Essential Components of Standard Operating Procedures (SOPs)",
           author: "Kendra Johng",
           date: "March 12, 2025",
@@ -935,7 +1016,7 @@
 </h3>
 `,
         },
-        5: {
+        6: {
           title: "Who Writes Standard Operating Procedures (SOPs)?",
           author: "Kendra Johng",
           date: "March 12, 2025",
@@ -956,7 +1037,7 @@
 </h3>
 `,
         },
-        6: {
+        7: {
           title:
             "Policies vs. Standard Operating Procedures (SOPs) vs. User Manuals: Understanding the Differences",
           author: "Kendra Johng",
@@ -973,7 +1054,7 @@
 <h3 class="text-xl font-bold mt-6 mb-3">Together, these documents create a structured approach to efficiency, compliance, and productivity in any organization.</h3>
 `,
         },
-        7: {
+        8: {
           title: "Best Practices for Writing Effective User Manuals",
           author: "Kendra Johng",
           date: "March 12, 2025",
@@ -1000,7 +1081,7 @@
 
 `,
         },
-        8: {
+        9: {
           title: "Best Practices for Writing Clear and Effective Policies",
           author: "Kendra Johng",
           date: "March 12, 2025",
