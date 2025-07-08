@@ -1,174 +1,230 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Kendra Johng</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="p:domain_verify" content="0ea3b09da0f545ef8f8f2381123f1ac0"/>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kendra Johng | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
 <style>
-body,h1,h5 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('DSC09975-Edit_002.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
+body {
+	background: linear-gradient(-45deg, #f4c6f9, #b7b6fe, #71d0f3, #82fade);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 </style>
+
+
+
 </head>
-<body>
+<body class="text-gray-800 flex flex-col items-center justify-center min-h-screen">
 
-<div class="bgimg w3-display-container w3-text-white">
-  <div class="w3-display-middle w3-jumbo">
-    <p>kendra johng</p>
-  </div>
-  <div class="w3-display-topleft w3-container w3-medium">
-    <p><button onclick="document.getElementById('about').style.display='block'" class="w3-button w3-black">who are you?</button></p>
-    <p><button onclick="document.getElementById('experience').style.display='block'" class="w3-button w3-black">what's your experience?</button></p>
-    <p><button onclick="document.getElementById('portfolio').style.display='block'" class="w3-button w3-black">let me see your work.</button></p>
-    <p><button onclick="document.getElementById('services').style.display='block'" class="w3-button w3-black">i want to work with you!</button></p>
+<!-- Profile Image -->
+<img src="kendra-avatar-new.jpg" alt="Kendra Johng" class="w-32 h-32 rounded-full object-cover mt-8" />
 
-  </div>
-  <div class="w3-display-bottomleft w3-container">
-    <p class="w3-xlarge">senior technical writer</p>
-    <p class="w3-large">remote from ogden, utah</p>
-    <p><a style="text-decoration:none" href="https://kendrajohng.github.io/index/art.html">view secret art page</a></p>
-  </div>
-</div>
+  <!-- Header -->
+  <header class="text-center mt-8">
+    <h1 class="text-3xl font-bold">Kendra Johng</h1>
+    <p class="text-lg text-gray-600">Sr Tech Writer @ Kentik</p>    
+    <p class="text-lg text-gray-600"><small><em>Clippy is my spirit animal</em></small></p>
 
-<!-- About Modal -->
-<div id="about" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black w3-display-container">
-      <span onclick="document.getElementById('about').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <p>I'm Kendra Johng, a Senior Technical Writer and Project Manager based in Ogden, Utah with more than 9 years of experience. It's nice to meet you.</p>
-      <p>My work spans a wide variety of industries, including information technology, pharmaceuticals, medical devices, insurance, health and safety, manufacturing, food production, digital marketing, and beyond.</p>
-      <p>I am an expert in Software Development Life Cycle (SDLC) documentation, project management, process improvement, as well as maintaing critical policies and procedures in compliance with the Capability Maturity Model Integration (CMMI) standards, installation guides, and end-user instructions. I work directly with clients, developers, product managers, and Subject Matter Experts (SMEs) to create functional and aesthetic documentation.
-      <p>As a certified Department of Homeland Security (DHS) Trusted Tester, I am qualified to test and certify software applications for Section 508 compliance using the Web Content Accessibility Guidelines (WCAG). Throughout my career I have also obtained a Six Sigma Green Belt certification, and the Associate Safety Professional certification (2020-2023). I am currently in the process of obtaining the Certified Scrum Master certification.</p>
-      <button><a style="text-decoration:none" href="https://www.linkedin.com/in/kendra-johng/">Let's connect on LinkedIn</a></button>
+  </header>
 
-      <p>Outside of work, I love to draw, skateboard, and practice Brazilian Jiu-Jitsu. Donuts and cinnamon rolls are my weaknesses. I own a small art business by the name of Teddygramsoup. My collections can be found and purchased on <a href="https://www.etsy.com/shop/TeddygramsoupArt"><b>Etsy</b></a>, <a href="https://www.instagram.com/teddygramsoupart/"><b>Instagram</b></a>, or at a local Utah market event.</p>
-    </div>
-
-</div>
-</div>
+<!-- Navigation -->
+<nav class="mt-6">
+  <ul class="flex flex-col items-center space-y-3">
+    <li>
+      <button onclick="toggleModal('aboutModal')" class="px-4 py-2 bg-blue-600 text-white rounded-full text-sm">About</button>
+    </li>
+    <li>
+      <button onclick="toggleModal('servicesModal')" class="px-4 py-2 bg-blue-600 text-white rounded-full text-sm">Portfolio</button>
+    </li>
+    <li>
+      <button onclick="toggleModal('portfolioModal')" class="px-4 py-2 bg-blue-600 text-white rounded-full text-sm">Services</button>
+    </li>
+  </ul>
+</nav>
 
 
-<!-- Portfolio Modal -->
-<div id="portfolio" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black w3-display-container">
-      <span onclick="document.getElementById('portfolio').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h1>EPA-Published Documents</h1>
-    </div>
-    <div class="w3-container">
-        <p>While much of my contracted EPA work was proprietary, I’m able to share some public-facing documents from my contract with the United States Environmental Protection Agency (EPA). Below is a selection of these texts.</p>
-        <h5><b>1. Pre-Production Release Notes  | <a href="https://usepa.servicenowservices.com/sdwisprogram?id=kb_search&kb_knowledge_base=4251afe41b9705547b16ea04bc4bcbd2&spa=1&kb_category=571cfdf51baea1508e946311f54bcbd2">Read Here</b></a></h5>
-    <p>The purpose of these release notes are to inform the drinking water user community of the Drinking Water State-Tribal-Federal Information Exchange System (DW-SFTIES) development updates on a bi-monthly cadence. Each set of release notes contains the following sections: 1. What is included in the release, 2. New Features, 3. Enhancements, 4. Fixes, 5. Known Issues, 6. User Acceptance Testing Summary, 7. Goals for future releases, and 8. References.</p>
-        <h5><b>2. Concept of Operations (CONOPS)  | <a href="https://usepa.servicenowservices.com/sdwisprogram?id=kb_article_view&sysparm_article=KB0015384">Read Here</b></a></h5>
-      <p>This Concept of Operations (CONOPS) is both an analysis and a formal document that describes how the DW-SFTIES and associated components (applications, web services, etc.) will operate to achieve business, functional, and technical requirements.</p>
-        <h5><b>3. Data Model Analysis Summary Report  | <a href="https://usepa.servicenowservices.com/sdwisprogram?id=kb_article_view&sysparm_article=KB0015927">Read Here</b></a></h5>
-      <p>The purpose of this document is to summarize the analysis and decisions made during the evaluation phase for the Drinking Water State-Federal-Tribal Information Exchange System (DW-SFTIES) data model.</p>
-        <h5><b>4. Ground Water Rule (GWR) Data Entry Instructions (DEIs)  | <a href="https://usepa.servicenowservices.com/sdwisprogram?id=kb_article_view&sysparm_article=KB0015368">Read Here</b></a></h5>
-      <p>The Ground Water Rule (GWR) Data Entry Instructions (DEIs) document provides the most common GWR violations in the form of example scenarios. This DEI also provides guidance about data fields that need to be reported for each violation scenario.</p>
-      <h5><b>5. 2022 General Assistance Program (GAP) Guidance  | <a href="https://www.epa.gov/general-assistance-program-gap/gap-guidance-financial-assistance-agreements">Read Here</b></a></h5>
-    <p>This Guidance provides information to Tribes and intertribal consortia on how to develop, apply for, and manage Indian Environmental General Assistance Program (GAP) financial assistance agreements, generally referred to as GAP grants. It also describes how the U.S. Environmental Protection Agency (EPA) administers GAP grants to ensure national consistency in EPA’s actions when negotiating, reviewing, and administering GAP awards.</p>
-    </div>
-    <div class="w3-container w3-black">
-      <h1>Freelance Writing</h1>
-    </div>
-    <div class="w3-container">
-      <h5><b>1. Nuwave Laser Cleaning   | <a target="_blank" href="Final Nuwave Laser NCL_redacted.pdf">View User Manual</a></b></h5>
-        <p>I provided documentation support for <a href="https://nuwavelaser.com/"><b>Nuwave Laser Cleaning</b></a> by transforming their initial user manauls. I collaborated with the Subject Matter Experts (SMEs) to validate the manuals' content and operation procedures throughout the document. The first manual is for their Continuous Wave Laser Cleaning Machine, and the second manual is for the Pulse Laser Cleaning Machine.</p>
-      <h5><b>2. A'lei Beauty Marketing and Product Management   | <a target="_blank" href="Small Business Beauty Company_Kendra Johng Technical Writing Portfolio_032523.pdf">View SOP</a></b></h5>
-      <P><a href="https://www.aleibeauty.com/?srsltid=AfmBOoodVNKYXiB0ADaD6v0QnkQQcG3Anizq1X3xtTwd1xz1Ey2BbA_c"><b>A'lei Beauty</b></a> requested an SOP that covers marketing, quality control, and production and inventory processes for her beauty business.</P>
-      <h5><b>3. Pure Pharmacy Reformatting  | <a target="_blank" href="PurePharmacy_SOPs_Before.pdf">View Before</a>  
-        &#160 
-      <a target="_blank" href="PurePharmacy_SOPs_After.pdf">View After</a></b></h5>
-        <p>Pure Pharmacy requested a replacement of the company logo, address, phone number, personnel names, and removal of watermarks. I spent extra, unpaid time to reformat the document so everything looked uniform and aesthetic. I was not tasked with editing or reviewing of the content.</p>
-	    <h5><b>4. Autosource Document Reformatting  | <a target="_blank" href="BEFORE_Autosource Document Reformatting and Editing.pdf">View Before</a>  
-        &#160 
-      <a target="_blank" href="Autosource ACH Form_Draft_060723-combined.pdf">View After</a></b></h5>
-        <p><a href="https://autosourcehawaii.com/"><b>Autosource</b></a> requested a review of all documents, editing, reformatting, and the addition of their new company logos.</p>
-	    <h5><b>5. Clinical Diagnostics Laboratories In-Home Blood Drawing and Testing Services | <a target="_blank" href="Phlebotomy SOP_Before.pdf">View Before</a>  
-        &#160 
-      <a target="_blank" href="Phlebotomy SOP_After_With Edits.pdf">View After</a></b></h5></h5>
-      <p>Client requested reviewing, editing, and reformatting of their draft SOP. The "View After" document shows my edits and comments. The client did not request additional work beyond this.</p>
-      <h5><b>6. Retail Store Opening Procedure   | <a target="_blank" href="Retail Store Opening Procedure_Kendra Johng Technical Writing Portfolio_041023.pdf">View Procedure</a></b></h5>
-      <p>I wrote this document as an exercise for my portfolio; this was not for a client. I did some research on the retail industry and job descriptions for retail store managers to help me write this SOP.</p>
-  </div>
-    <div class="w3-container w3-black">
-      <h1>Other Contributions</h1>
-    </div>
-    <div class="w3-container">
-      <h5>1. Luca Ledger   | <a href="https://github.com/jwaspin/luca-ledger/blob/main/UserGuide.pdf"><b>View User Guide 1.0</b></a></h5>
-      <p>I found an open project on Github and volunteered to write a user manual for <a href="https://github.com/jwaspin">jwaspin</a> (Jonathan).</p>
-   <h5>2. Kentik Knowledge Base   | <a href="https://docs.google.com/document/d/182Xd4kSOOjFcbk71cH9QuMCMpfgY_DLSXq0o4Mobvmc/edit?usp=sharing"><b>View "Journeys" Knowledge Base Review</b></a></h5>
-      <p>The purpose of this review is for my personal education about Kentik’s Knowledge Base. 
-	      To view my feedback comments you'll need to go to the top toolbar and select "View" > "Comments" > "Show all comments". 
-	      Source: <a href="https://kb.kentik.com/v4/Ea13.htm">https://kb.kentik.com/v4/Ea13.htm</a></p>
-	       <h5>3. Kentik Journeys AI   | <a href="https://docs.google.com/document/d/15Xg8my1B66stU3GiZN17SE-jzv-eacAldPYEJjcFjG8/edit?tab=t.0"><b>View Draft Troubleshooting Guide</b></a></h5>
-      <p>The purpose of this draft troubleshooting guide based on Kentik's YouTube tutorial is for my personal education about Kentik Journeys AI. 
-	      To view my feedback comments you'll need to go to the top toolbar and select "View" > "Comments" > "Show all comments". 
-	      Source: <a href="https://www.youtube.com/watch?v=C8FRqjxmWGw&t=1s">https://www.youtube.com/watch?v=C8FRqjxmWGw&t=1s</a></p>
-	                <hr>
-            <p>NEW! I just created a blog page where I'll write small articles based on my technical writing experience.</p>
-            <button><a style="text-decoration:none" href="https://substack.com/@kendrajohng">Read the Cozy Coworker Substack</a></button>
-	<p></p>
+  <!-- About Modal -->
+  <div id="aboutModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white rounded-lg p-6 w-11/12 max-w-md">
+      <h2 class="text-xl font-bold mb-4">About</h2>
+      <p>Hi! I'm Kendra Johng, a Senior Technical Writer at Kentik with expertise in Software Development Life Cycle (SDLC) documentation, project management, process improvement, and content strategy for enterprise SaaS products.</p>
+      <br>
+      <p>Donuts and cinnamon rolls are my weaknesses. I love skateboarding, vibe coding, and starting (possibly never finishing) new hobbies.</p>
+      <button class="mt-4 px-4 py-2 bg-gray-800 text-white rounded"><a style="text-decoration:none" href="https://www.linkedin.com/in/kendra-johng/">Let's Connect</a></button>
+      <br>
+      <button onclick="toggleModal('aboutModal')" class="mt-4 px-4 py-2 bg-gray-800 text-white rounded">Close</button>
     </div>
   </div>
-</div>
 
-<!-- Experience Modal -->
-<div id="experience" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black">
-      <span onclick="document.getElementById('experience').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h1>My Technical Writing Experience</h1>
+  <!-- Portfolio Modal -->
 
+    <div id="servicesModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white rounded-lg p-6 w-11/12 max-w-md">
+      <h2 class="text-xl font-bold mb-4">Portfolio</h2>
+      <div class="space-y-2">
+        <details class="border rounded">
+          <summary class="cursor-pointer px-4 py-2 bg-gray-100">Kentik Knowledge Base</summary>
+          <p class="px-4 py-2">Includes release notes, system overviews, instructions, and documentation about portal structure as well as detailed references to the interface and usage of all portal modules and settings.</p> 
+          <p class="px-4 py-2"><small><strong>Link to the KB:</strong> <a target="_blank" href="https://kb.kentik.com">kb.kentik.com</a></small></p>
+        </details>
+        <details class="border rounded">
+          <summary class="cursor-pointer px-4 py-2 bg-gray-100">Environmental Protection Agency (EPA) Project Documentation</summary>
+          <p class="px-4 py-2">Most of my contracted EPA work was proprietary. Here are a few public-facing contributions from my time at Systalex (2021-2025).</p>
+          <p class="px-4 py-2"><small><a target="_blank" href="https://usepa.servicenowservices.com/sdwisprogram?id=kb_search&kb_knowledge_base=4251afe41b9705547b16ea04bc4bcbd2&spa=1&kb_category=571cfdf51baea1508e946311f54bcbd2">Pre-Production Release Notes</a></small></p>
+          <p class="px-4 py-2"><small><a target="_blank" href="https://usepa.servicenowservices.com/sdwisprogram/en/dw-sfties-concept-of-operations-conops?id=kb_article_view&sysparm_article=KB0015384&sys_kb_id=bed8e23447c06614b2285ff2e16d4335&spa=1">Concept of Operations (CONOPS)</a></small></p>
+          <p class="px-4 py-2"><small><a target="_blank" href="https://usepa.servicenowservices.com/sdwisprogram/en/dw-sfties-data-model-analysis-summary-report?id=kb_article_view&sysparm_article=KB0015927&sys_kb_id=ba688e361b7b211c8e946311f54bcbf3&spa=1">Data Model Analysis Summary Report</a></small></p>
+          <p class="px-4 py-2"><small><a target="_blank" href="https://usepa.servicenowservices.com/sdwisprogram/en/ground-water-rule-gwr-dri?id=kb_article_view&sysparm_article=KB0015368&sys_kb_id=57f32c1c97842e90ef92fd9ad053af60&spa=1">Ground Water Rule (GWR) Data Reporting Instructions (DRIs)</a></small></p>
+          <p class="px-4 py-2"><small><a target="_blank" href="https://www.epa.gov/general-assistance-program-gap/gap-guidance-financial-assistance-agreements">2022 General Assistance Program (GAP) Guidance</a></small></p>
+        </details>
+        <details class="border rounded">
+          <summary class="cursor-pointer px-4 py-2 bg-gray-100">Freelance Writing</summary>
+          <p class="px-4 py-2"> I have been freelancing on the Fiverr platform since 2020. Below are some writing samples.</p>
+          <p class="px-4 py-2"><small><a target="_blank" href="Final Nuwave Laser NCL_redacted.pdf"><strong>Nuwave Laser Cleaning</strong> User Manual</a></small></p>
+          <p class="px-4 py-2"><small><a target="_blank" href="Small Business Beauty Company_Kendra Johng Technical Writing Portfolio_032523.pdf"><strong>A'lei Beauty Marketing and Product Management</strong> SOP</a></small></p>
+          <p class="px-4 py-2"><small><strong>Pure Pharmacy Reformatting</strong>: <a target="_blank" href="PurePharmacy_SOPs_Before.pdf">View Before</a>  
+         |
+      <a target="_blank" href="PurePharmacy_SOPs_After.pdf">View After</a></b></small></p>
+          <p class="px-4 py-2"><small><strong>Autosource Document Reformatting</strong>: <a target="_blank" href="BEFORE_Autosource Document Reformatting and Editing.pdf">View Before</a>  
+        |
+      <a target="_blank" href="Autosource ACH Form_Draft_060723-combined.pdf">View After</a></b></small></p>
+          <p class="px-4 py-2"><small><strong>Clinical Diagnostics Laboratories In-Home Blood Drawing and Testing Services</strong>: <a target="_blank" href="Phlebotomy SOP_Before.pdf">View Before</a>  
+        | 
+      <a target="_blank" href="Phlebotomy SOP_After_With Edits.pdf">View After</a></small></p>
+          
+          <p class="px-4 py-2"><small><a target="_blank" href="Retail Store Opening Procedure_Kendra Johng Technical Writing Portfolio_041023.pdf"><strong>Retail Store Opening</strong> Procedure</a></small></p>
 
-    </div>
-    <div class="w3-container">
+        </details>
+        <details class="border rounded">
+          <summary class="cursor-pointer px-4 py-2 bg-gray-100">Open-Source Contributions</summary>
+          <p class="px-4 py-2">I found an open project on Github and volunteered to write a user manual for jwaspin (Jonathan).</p>
+           <p class="px-4 py-2"><small><a target="_blank" href="https://github.com/jwaspin/luca-ledger/blob/main/UserGuide.pdf">Luca Ledger User Guide V1.0</a></small></p>
+          <p class="px-4 py-2">The purpose of the following Kentik docs is for my personal education about the company. 
+	      To view my feedback comments you'll need to go to the top toolbar and select "View" > "Comments" > "Show all comments".</p>
+          <p class="px-4 py-2"><small><a target="_blank" href="https://docs.google.com/document/d/182Xd4kSOOjFcbk71cH9QuMCMpfgY_DLSXq0o4Mobvmc/edit?usp=sharing"><strong>Kentik Knowledge Base</strong>: "Journeys" KB Review</a></small></p>
+          <p class="px-4 py-2"><small><a target="_blank" href="https://docs.google.com/document/d/15Xg8my1B66stU3GiZN17SE-jzv-eacAldPYEJjcFjG8/edit?tab=t.0"><strong>Kentik Journeys AI</strong>: Draft Troubleshooting Guide</a></small></p>
 
-        <h5><b>Resume Last Updated:</b>March 26, 2025</h5>
-             <button><a style="text-decoration:none" href="Kendra Johng Resume_032625.pdf">Download my resume</a></button>
-      <br><br>
-    </div>
-  </div>
-</div>
-
-<!-- Services Modal -->
-<div id="services" class="w3-modal">
-    <div class="w3-modal-content w3-animate-zoom">
-      <div class="w3-container w3-black w3-display-container">
-        <span onclick="document.getElementById('services').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-        <h1>Documentation Services Available</h1>
-        
+        </details>
       </div>
-      <div class="w3-container">
-        <p>I am available for 10-20 freelance hours per week outside of my 9-to-5. Though I typically promote my technical writing services on Fiverr, I am open for direct queries. Send me an email using the button link below.</p>
-        <button><a target="_blank" style="text-decoration:none" href="mailto:kendrajohng@gmail.com">Let's work together</a></button>
-        <hr>
-          <h5><b>1. Software Documentation</b></h5>
-            <p>Whether you need a brand-new document or a revamp of existing text, I can take your software documentation to the next level of professionalism, accessibility, and flow. From release notes to user guides, installation and configuration instructions to API documentation and more, I can take it on.</p>
-            <h5><b>2. Standard Operating Procedures (SOPs) or User Manuals</b></h5>
-            <p>Every SOP I create is tailored to my clients’ specific business processes and needs. With this customized document in hand, your employees will be equipped to carry out any procedure.</p>
-            <h5><b>3. Project Management and Document Management</b></h5>
-            <p>By assessing your current process for document management, I will curate and implement solutions for improvement using Google Drive, SharePoint, Microsoft Teams, Confluence, and/or Notion.</p>
-            <h5><b>4. 508 Compliance Support</b></h5>
-            <p>Together, we can ensure your documents are accessible for all users.</p>
-            <hr>
-            <p>Don't just take my word for it. Read what my clients have to say.</p>
-            <button><a style="text-decoration:none" href="https://www.fiverr.com/kdadisman?public_mode=true">Client Reviews on Fiverr</a></button>
-            <p></p>
+            <button class="mt-4 px-4 py-2 bg-gray-800 text-white rounded"><a style="text-decoration:none" target="_blank" href="Kendra Johng Resume_032625.pdf">Download My Resume</a></button>
+      <br>
+      <button onclick="toggleModal('servicesModal')" class="mt-4 px-4 py-2 bg-gray-800 text-white rounded">Close</button>
+    </div>
+  </div>
 
-        </div>
-</div>
-</div>
+  <!-- Services Modal -->
+  <div id="portfolioModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center overflow-auto">
+    <div class="bg-white rounded-lg p-6 w-11/12 max-w-md">
+      <h2 class="text-xl font-bold mb-4">Contract Services</h2>
+      <p>I am available for 10-20 freelance hours per week outside of my 9-to-5.</p>
+      <br><hr>
+      <table class="min-w-full text-left">
+        <thead>
+          <tr>
+            <th class="border-b py-2">Service</th>
+            <th class="border-b py-2">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border-b py-2">Technical Writing</td>
+            <td class="border-b py-2">Clear, concise documentation for user guides, developer docs, and product knowledge bases.</td>
+          </tr>
+          <tr>
+            <td class="border-b py-2">Standard Operating Procedures (SOPs)</td>
+            <td class="border-b py-2">Custom step-by-step procedures tailored to your business needs.</td>
+          </tr>
+        <tr>
+            <td class="border-b py-2">Project Management</td>
+            <td class="border-b py-2">Assess current business processes, provide recommendations for improvement, and implement solutions.</td>
+          </tr>
+        <tr>
+            <td class="border-b py-2">508 Compliance</td>
+            <td class="border-b py-2">Ensure documents, PDFs, and presentations are accessible to all users.</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="mt-4 px-4 py-2 bg-gray-800 text-white rounded"><a style="text-decoration:none" href="mailto:kendrajohng@gmail.com">Email Me</a></button>
+      <br>
+      <button onclick="toggleModal('portfolioModal')" class="mt-4 px-4 py-2 bg-gray-800 text-white rounded">Close</button>
+    
+    </div>
+  </div>
 
+
+<!-- Links Icons -->
+
+<!-- Links Icons -->
+<footer class="mt-8 flex space-x-4">
+  <!-- GitHub -->
+  <a href="https://github.com/kendrajohng" target="_blank" aria-label="GitHub">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white hover:opacity-80 transition" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.1-1.6-1.1-1.6-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.3 1.1 2.9.8.1-.7.3-1.1.6-1.4-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.1-3.2-.1-.3-.5-1.6.1-3.3 0 0 .9-.3 3.3 1.1a11.4 11.4 0 0 1 6 0c2.4-1.4 3.3-1.1 3.3-1.1.6 1.7.2 3 .1 3.3.7.9 1.1 2 1.1 3.2 0 4.6-2.7 5.6-5.3 5.9.4.3.7.9.7 1.8v2.7c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/>
+    </svg>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/kendra-johng/" target="_blank" aria-label="LinkedIn">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white hover:opacity-80 transition" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.7v2.3h.1c.7-1.3 2.4-2.6 5-2.6 5.3 0 6.3 3.5 6.3 8v8.3h-5V16c0-1.9-.03-4.3-2.6-4.3-2.6 0-3 2-3 4.2v8.1h-5V8z"/>
+    </svg>
+  </a>
+
+  <!-- Email -->
+  <a href="mailto:kendrajohng@gmail.com" aria-label="Email">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white hover:opacity-80 transition" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 13.065L.667 4h22.666L12 13.065zm0 2.87L.667 6.87V20h22.666V6.87L12 15.935z"/>
+    </svg>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/teddygramsoupart/" target="_blank" aria-label="Instagram">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white hover:opacity-80 transition" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 2.2c3.2 0 3.6 0 4.8.07 1.17.06 1.95.25 2.4.42.6.23 1.03.51 1.48.96.45.45.73.88.96 1.48.17.45.36 1.23.42 2.4.07 1.2.07 1.6.07 4.8s0 3.6-.07 4.8c-.06 1.17-.25 1.95-.42 2.4-.23.6-.51 1.03-.96 1.48-.45.45-.88.73-1.48.96-.45.17-1.23.36-2.4.42-1.2.07-1.6.07-4.8.07s-3.6 0-4.8-.07c-1.17-.06-1.95-.25-2.4-.42-.6-.23-1.03-.51-1.48-.96-.45-.45-.73-.88-.96-1.48-.17-.45-.36-1.23-.42-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.8c.06-1.17.25-1.95.42-2.4.23-.6.51-1.03.96-1.48.45-.45.88-.73 1.48-.96.45-.17 1.23-.36 2.4-.42C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.14 0-3.5 0-4.73.07-1.02.05-1.57.22-1.93.36-.48.19-.82.42-1.18.78-.36.36-.59.7-.78 1.18-.14.36-.31.91-.36 1.93-.07 1.23-.07 1.6-.07 4.73s0 3.5.07 4.73c.05 1.02.22 1.57.36 1.93.19.48.42.82.78 1.18.36.36.7.59 1.18.78.36.14.91.31 1.93.36 1.23.07 1.6.07 4.73.07s3.5 0 4.73-.07c1.02-.05 1.57-.22 1.93-.36.48-.19.82-.42 1.18-.78.36-.36.59-.7.78-1.18.14-.36.31-.91.36-1.93.07-1.23.07-1.6.07-4.73s0-3.5-.07-4.73c-.05-1.02-.22-1.57-.36-1.93-.19-.48-.42-.82-.78-1.18-.36-.36-.7-.59-1.18-.78-.36-.14-.91-.31-1.93-.36C15.5 4 15.1 4 12 4zm0 3.8a4.2 4.2 0 1 1 0 8.4 4.2 4.2 0 0 1 0-8.4zm0 1.8a2.4 2.4 0 1 0 0 4.8 2.4 2.4 0 0 0 0-4.8zm5.25-2.45a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+    </svg>
+  </a>
+
+  <!-- Twitter (X) -->
+  <a href="https://x.com/thekendralamar" target="_blank" aria-label="Twitter">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white hover:opacity-80 transition" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M19.633 7.997c.013.18.013.36.013.54 0 5.5-4.185 11.835-11.835 11.835-2.35 0-4.533-.69-6.367-1.86.326.037.65.05.99.05 1.947 0 3.733-.66 5.155-1.77-1.818-.037-3.35-1.233-3.878-2.883.253.038.507.063.773.063.374 0 .747-.05 1.095-.14-1.895-.38-3.322-2.048-3.322-4.06v-.05c.553.3 1.182.482 1.853.507a4.132 4.132 0 0 1-1.843-3.437c0-.76.202-1.47.554-2.08a11.735 11.735 0 0 0 8.505 4.31c-.057-.304-.082-.62-.082-.935 0-2.285 1.853-4.137 4.138-4.137 1.192 0 2.27.507 3.026 1.32a8.175 8.175 0 0 0 2.615-1c-.277.86-.86 1.582-1.617 2.038a8.236 8.236 0 0 0 2.38-.646 8.68 8.68 0 0 1-2.07 2.14z"/>
+    </svg>
+  </a>
+  
+  <!-- Substack -->
+  <a href="https://kendrajohng.substack.com/" target="_blank" aria-label="Substack">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white hover:opacity-80 transition" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M3 3h18v3H3V3zm0 5h18v3H3V8zm0 5h18v8H3v-8z"/>
+    </svg>
+  </a>
+</footer>
+
+  
+
+  <!-- Script -->
+  <script>
+    function toggleModal(id) {
+      const modal = document.getElementById(id);
+      modal.classList.toggle('hidden');
+    }
+  </script>
 
 </body>
 </html>
-
