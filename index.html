@@ -52,7 +52,10 @@ body {
       <button onclick="toggleModal('aboutModal')" class="px-4 py-2 bg-gray-800 text-white rounded-full text-sm">About</button>
     </li>
     <li>
-      <button onclick="toggleModal('servicesModal')" class="px-4 py-2 bg-gray-800 text-white rounded-full text-sm">Portfolio</button>
+      <button onclick="toggleModal('servicesModal')" class="px-4 py-2 bg-gray-800 text-white rounded-full text-sm">Writing Portfolio</button>
+    </li>
+	      <li>
+      <button onclick="toggleModal('appsModal')" class="px-4 py-2 bg-gray-800 text-white rounded-full text-sm">Apps Portfolio</button>
     </li>
     <li>
       <button onclick="toggleModal('portfolioModal')" class="px-4 py-2 bg-gray-800 text-white rounded-full text-sm">Services</button>
@@ -78,7 +81,7 @@ body {
 
     <div id="servicesModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
     <div class="bg-white rounded-lg p-6 w-11/12 max-w-md">
-      <h2 class="text-xl font-bold mb-4">Portfolio</h2>
+      <h2 class="text-xl font-bold mb-4">Writing Portfolio</h2>
       <div class="space-y-2">
         <details class="border rounded">
           <summary class="cursor-pointer px-4 py-2 bg-gray-100">Kentik Knowledge Base</summary>
@@ -129,11 +132,30 @@ body {
     </div>
   </div>
 
+	  <!-- Apps Modal -->
+
+    <div id="appsModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white rounded-lg p-6 w-11/12 max-w-md">
+      <h2 class="text-xl font-bold mb-4">Apps Portfolio</h2>
+      <div class="space-y-2">
+        <details class="border rounded">
+          <summary class="cursor-pointer px-4 py-2 bg-gray-100">Technical Writing Practice Generator (TWPG)</summary>
+          <p class="px-4 py-2">I created this tool to help technical writers develop their skills through practical, algorithmically-generated exercises that mirror real-world documentation challenges.</p>
+			<p class="px-4 py-2">Version 0.1.0 is Live! Launched on September 14th, 2025.</p>
+			<p class="px-4 py-2"><small>NOTE: This is the first app that I've developed and deployed to the public. I am super proud of it, but I am a writer first. I’d love your input to make this tool great for you and to improve my dev skills.</small>
+          <p class="px-4 py-2"><small><strong>Link to the TWPG Feedback Form:</strong> <a target="_blank" href="https://forms.gle/24HUfNHSD3sARdDG7">Provide Feedback</a></small></p>
+        </details>
+            <button class="mt-4 px-4 py-2 bg-gray-800 text-white rounded"><a style="text-decoration:none" target="_blank" href="https://twpg.vercel.app/">Go To App</a></button>
+      <br>
+      <button onclick="toggleModal('appsModal')" class="mt-4 px-4 py-2 bg-gray-800 text-white rounded">Close</button>
+    </div>
+  </div>
+
   <!-- Services Modal -->
   <div id="portfolioModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center overflow-auto">
     <div class="bg-white rounded-lg p-6 w-11/12 max-w-md">
       <h2 class="text-xl font-bold mb-4">Contract Services</h2>
-      <p><small>I am available for 10-20 freelance hours per week outside of my 9-to-5.</small></p>
+      <p>I am available for 10-20 freelance hours per week outside of my 9-to-5.</p>
       <br><hr>
       <table class="min-w-full text-left">
         <thead>
@@ -217,3 +239,4 @@ body {
 
 </body>
 </html>
+
