@@ -54,6 +54,9 @@ body {
     <li>
       <button onclick="toggleModal('servicesModal')" class="px-4 py-2 bg-gray-800 text-white rounded-full text-sm">Writing Portfolio</button>
     </li>
+        <li>
+      <button onclick="toggleModal('appsModal')" class="px-4 py-2 bg-gray-800 text-white rounded-full text-sm">Apps Portfolio</button>
+    </li>
     <li>
       <button onclick="toggleModal('portfolioModal')" class="px-4 py-2 bg-gray-800 text-white rounded-full text-sm">Services</button>
     </li>
@@ -126,6 +129,25 @@ body {
             <button class="mt-4 px-4 py-2 bg-gray-800 text-white rounded"><a style="text-decoration:none" target="_blank" href="Kendra Johng Resume_032625.pdf">Download My Resume</a></button>
       <br>
       <button onclick="toggleModal('servicesModal')" class="mt-4 px-4 py-2 bg-gray-800 text-white rounded">Close</button>
+    </div>
+  </div>
+
+ <!-- Apps Portfolio Modal -->
+
+    <div id="appsModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white rounded-lg p-6 w-11/12 max-w-md">
+      <h2 class="text-xl font-bold mb-4">Apps Portfolio</h2>
+      <div class="space-y-2">
+        <details class="border rounded">
+          <summary class="cursor-pointer px-4 py-2 bg-gray-100">Technical Writing Practice Generator (TWPG)</summary>
+          <p class="px-4 py-2">I'm so stoked to launch my first app, TWPG! I created this tool to help technical writers develop their skills through practical, algorithmically-generated exercises that mirror real-world documentation challenges.</p> 
+          <p class="px-4 py-2">I'd love your input to make this tool great for you and to improve my dev skills.</p> 
+          <p class="px-4 py-2"><small><strong>Link to the feedback form:</strong> <a target="_blank" href="https://forms.gle/24HUfNHSD3sARdDG7">Provide Feedback</a></small></p>
+        </details>
+      </div>
+            <button class="mt-4 px-4 py-2 bg-gray-800 text-white rounded"><a style="text-decoration:none" target="_blank" href="https://twpg.vercel.app/">Go To App</a></button>
+      <br>
+      <button onclick="toggleModal('appsModal')" class="mt-4 px-4 py-2 bg-gray-800 text-white rounded">Close</button>
     </div>
   </div>
 
