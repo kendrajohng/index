@@ -1,1 +1,1 @@
-# Your Softgen App
+# Kendra Johng's Portfolio
